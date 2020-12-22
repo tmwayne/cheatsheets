@@ -1,0 +1,21 @@
+
+      ## Information
+      Get device info ..................... udevadm info --query=all --name=<dev>
+      Watch device changes ................ udevadm monitor <args>
+      Get CPU specs ....................... lscpu
+
+      ## File systems
+      List all filesystems ................ lsblk --fs
+      Mount a filesystem .................. mount -t <type> <dev> <mountpoint>
+      Print mounted filesystems ........... mount
+      Check ext# filesystem ............... e2fsck <dev>
+      List file system block info ......... dumpe2fs -h <dev>
+      Shrink file system .................. resize2fs -M <dev>
+      Hexdump a file stream ............... xxd -l <bytes> <dev>
+
+      ## Partitions
+      List partitions ..................... fdisk --list
+      List partitions ..................... parted -l
+      Print UUID for each partition ....... blkid
+      Resize partition .................... parted <dev> -- resizepart <num> <end>
+

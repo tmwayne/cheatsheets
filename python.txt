@@ -1,0 +1,23 @@
+
+      ## Package building
+      Install project ..................... pip install .
+      Install project as editable ......... pip install -e .
+      Build package ....................... python3 setup.py sdist bdist_wheel
+      Build Cython ........................ python3 setup.py build_ext --inplace
+
+      ## Documentation
+      Initial sphinx build ................ sphinx-quickstart docs
+      Build documentation ................. make html
+
+      ## Testing
+      Run pdb upon failure ................ pytest --pdb
+      Rerun just the failing tests ........ pytest --last-failed
+      Show N longest running tests ........ pytest --durations=N
+      Turn off traceback .................. pytest --tb=no
+      Allow output to be printed .......... pytest --capture=no
+      Show additional test info ........... pytest -r
+      Run tests matching with substring ... pytest -k <substring>
+      Show fixtures ....................... pytest --fixtures 
+      Run coverage with pytest ............ pytest --cov=src
+      Run coverage report ................. coverage run --source <s> -m pytest
+

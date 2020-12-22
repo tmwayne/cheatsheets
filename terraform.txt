@@ -1,0 +1,5 @@
+
+      ## Basic
+      Build instances ..................... terraform apply
+      Destroy instances ................... terraform destroy
+

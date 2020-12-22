@@ -1,0 +1,24 @@
+
+      ## Inspection
+      Print all locals .................... info locals
+      Print first n elements of array ..... print *<array>@<n>
+      Set gdb variable .................... set $<var> = <exp>
+      Examine bytes around addres ......... x/<n>w <addr>
+
+      ## Breaking
+      Add breakpoint ...................... break <function>
+      Add file breakpoint ................. break <file>.c:<line>
+      Add conditional breakpoint .......... break <line> if <condition>
+
+      ## Running the program
+      Run the next line ................... step
+      Step through the function ........... next
+      Run to next line .................... until
+      Run to next break point ............. continue
+
+      ## Navigation
+      Go to line .......................... jump <line>
+      Exit frame .......................... return
+      Show location in stack .............. where
+      Show current frame .................. frame
+

@@ -1,0 +1,34 @@
+
+      ## Computer specs
+      Print various hardware info ......... uname -a
+      Print architecture parameters ....... getconf -a
+      Show CPU specs ...................... cat /proc/cpuinfo
+      Show memory specs ................... cat /proc/meminfo
+      Show disk stats ..................... cat /proc/diskstats
+      Show devices ........................ cat /proc/devices
+      Show other hardware info ............ dmidecode
+      Print distro information ............ lsb_release -a
+
+      ## Resource information
+      Show memory use ..................... free -h
+      Show disk availability .............. df -h
+      Show file size ...................... du -sh
+
+      ## Resource monitoring
+      Open top for IO ..................... iotop
+      Monitor a specific process .......... pidstat
+      List running jobs ................... ps -auxf
+      List uptime and load averages ....... uptime
+      List IO information ................. iostat
+      List domain sockets in use .......... lsof -U
+      Print kernel ring buffer ............ dmesg
+      Watch kernel messages ............... dmesg --human -w
+
+      ## Process management
+      List the files processes use ........ lsof
+      System trace a program .............. strace <cmd>
+      List library calls of a program ..... ltrace <cmd>
+      List shared library deps ............ ldd <cmd>
+      Disassociate job from terminal ...... nohup <cmd> &>/dev/null &
+      Sudo without switching homes ........ sudo -E <cmd>
+

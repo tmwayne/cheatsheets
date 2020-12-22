@@ -1,0 +1,36 @@
+
+      ## General
+      View current daemon config .......... docker info
+
+      ## Basics
+      Build image ......................... docker build -t <img> .
+      Run a named container ............... docker run --name <cnt> <img>
+      Run detached container .............. docker run -d <img>
+      Run interactive container ........... docker run -i <cnt>
+
+      ## Container Management
+      Rename container .................... docker rename <old> <new>
+      Attach running container ............ docker attach <cnt>
+
+      ## Image Management
+      Rename image ........................ docker tag <old> <new>
+
+      ## Docker-compose
+      Run compose in detached ............. docker-compose up -d
+
+      ## Interaction
+      Get port of container ............... docker port <cnt> <port>
+      Open shell in existing container .... docker exec -it <id> bash
+      View stdout of container ............ docker logs <cnt>
+      
+      ## Repos
+      Commit docker image ................. docker commit <cnt> <img>
+
+      ## Clean up
+      Kill all containers ................. docker kill $(docker ps -q)
+      List dangling volumes ............... docker volume ls -qf dangling=true
+      Remove volume ....................... docker volume rm
+      Remove unused volumes ............... docker volume prune
+      Remove unused containers, etc ....... docker system prune
+      Remove dangling images .............. docker image prune
+
