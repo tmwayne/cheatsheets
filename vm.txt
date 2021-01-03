@@ -1,0 +1,10 @@
+
+      ## Creation
+      Create VM ........................... virt-install <specs>
+      Clone VM ............................ virt-clone <orig> <name>
+      
+      ## Interaction
+      List VMs ............................ virsh list --all
+      Edit VM ............................. virsh edit <vm>
+      Reboot VM ........................... virsh reboot <vm>
+

@@ -3,6 +3,7 @@
       List explicitly install packages .... pacman -Qe
       List native packages ................ pacman -Qn
       Search package database ............. pacman -Ss <pkg>
+      List package owner of a library ..... pacman -Qo <lib>
 
       ## Upgrade
       Full system upgrade ................. pacman -Syu

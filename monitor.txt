@@ -8,6 +8,8 @@
       Show devices ........................ cat /proc/devices
       Show other hardware info ............ dmidecode
       Print distro information ............ lsb_release -a
+      Show available IPC facilities ....... lsipc
+      Show activity in IPC subsystems ..... ipcs
 
       ## Resource information
       Show memory use ..................... free -h
@@ -31,4 +33,5 @@
       List shared library deps ............ ldd <cmd>
       Disassociate job from terminal ...... nohup <cmd> &>/dev/null &
       Sudo without switching homes ........ sudo -E <cmd>
+      Get PID of process by name .......... pgrep <process>
 

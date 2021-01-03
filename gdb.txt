@@ -4,6 +4,7 @@
       Print first n elements of array ..... print *<array>@<n>
       Set gdb variable .................... set $<var> = <exp>
       Examine bytes around addres ......... x/<n>w <addr>
+      Print backtrace ..................... backtrace
 
       ## Breaking
       Add breakpoint ...................... break <function>

@@ -18,3 +18,8 @@
       View program header table ........... readelf -l <obj>
       View relocation table ............... readelf --relocs <obj>
       Remove symbols ...................... strip <obj>
+      List coredumps ...................... coredumpctl list
+      Print details of coredump ........... coredumpctl info <match>
+      Examine coredump with GDB ........... coredumpctl gdb <match>
+
+
