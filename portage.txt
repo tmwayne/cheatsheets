@@ -1,0 +1,15 @@
+
+      ## Inspection
+      Find package ........................ emerge -a <pkg>
+      Display USE flags for package ....... equery uses <pkg>
+      Show which packages use a USE flag .. equery hasuse <flag>
+
+      ## Upgrade
+      Sync ebuild repository .............. emerge-webrsync
+      Full system upgrade ................. emerge -auvUD @world
+
+      ## Modify
+      Add new USE flag .................... euse -E <flg>
+      Manage configuration changes ........ dispatch-conf
+      Manage configuration changes ........ etc-update
+

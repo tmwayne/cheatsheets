@@ -5,6 +5,7 @@
       Set gdb variable .................... set $<var> = <exp>
       Examine bytes around addres ......... x/<n>w <addr>
       Print backtrace ..................... backtrace
+      Disassemble with code interspersed .. disassemble /mr <func>
 
       ## Breaking
       Add breakpoint ...................... break <function>

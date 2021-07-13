@@ -20,6 +20,7 @@
       Open top for IO ..................... iotop
       Monitor a specific process .......... pidstat
       List running jobs ................... ps -auxf
+      List process tree ................... pstree
       List uptime and load averages ....... uptime
       List IO information ................. iostat
       List domain sockets in use .......... lsof -U
@@ -27,11 +28,16 @@
       Watch kernel messages ............... dmesg --human -w
 
       ## Process management
-      List the files processes use ........ lsof
+      Get PID of process by name .......... pgrep <process>
+      List the files processes use ........ lsof -p <prog>
       System trace a program .............. strace <cmd>
       List library calls of a program ..... ltrace <cmd>
       List shared library deps ............ ldd <cmd>
       Disassociate job from terminal ...... nohup <cmd> &>/dev/null &
       Sudo without switching homes ........ sudo -E <cmd>
-      Get PID of process by name .......... pgrep <process>
+      Log terminal session ................ script <file>
+      Print info about process ............ prtstat
+
+      ## Inspect
+      Show command definition ............. type <cmd>
 

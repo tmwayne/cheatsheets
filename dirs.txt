@@ -1,0 +1,4 @@
+
+      ## Misc locations
+      Libvirt images ...................... /var/lib/libvirt/images
+

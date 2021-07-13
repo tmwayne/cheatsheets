@@ -8,6 +8,7 @@
       List all filesystems ................ lsblk --fs
       Mount a filesystem .................. mount -t <type> <dev> <mountpoint>
       Print mounted filesystems ........... mount
+      Check and repair filesystem ......... fsck <dev>
       Check ext# filesystem ............... e2fsck <dev>
       List file system block info ......... dumpe2fs -h <dev>
       Shrink file system .................. resize2fs -M <dev>
@@ -18,4 +19,11 @@
       List partitions ..................... parted -l
       Print UUID for each partition ....... blkid
       Resize partition .................... parted <dev> -- resizepart <num> <end>
+
+      ## Kernel
+      List loaded modules ................. lsmod
+
+      ## Printing
+      List printers ....................... lpstat -d
+      Print file .......................... lp <file>
 

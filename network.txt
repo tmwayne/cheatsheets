@@ -5,7 +5,7 @@
       Read tcpdump file (ASCII and hex) ... tcpdump -XX -# -r <file>
       Show the IP routing table ........... route
       Lookup IP for DNS name .............. nslookup <DNS name>
-      Print packet path to host ........... traceroute
+      Print packet path to host ........... traceroute [depr]
       Print packet path to host ........... tracepath
       Scan network for hosts .............. nmap -sn <network>
 
@@ -23,7 +23,9 @@
       Show NIC info ....................... ifconfig (also ip link)
       List available wifi networks ........ nmcli device wifi list
       Print info on wirless connection .... iw dev <int> link
-      Unblock wifi interface .............. rfkill unblock all
+      Check if wifi is blocked ............ rfkill list
+      Unblock wifi interface .............. rfkill unblock wifi
+      Check WPA status .................... wpa_cli status
 
       ## Remote connections
       Create new key ...................... ssh-keygen -b 2048 -t rsa
@@ -36,4 +38,5 @@
 
       ## Web interaction
       Save HTTP interaction to file ....... curl --trace-ascii <file> <url>
+      Continue wget download .............. wget -c <url>
 

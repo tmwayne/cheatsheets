@@ -1,10 +1,30 @@
 
       ## Creation
       Create VM ........................... virt-install <specs>
-      Clone VM ............................ virt-clone <orig> <name>
+      Clone VM ............................ virt-clone -o <orig> -n <name>
+      Get OS options ...................... osinfo-query os
       
       ## Interaction
       List VMs ............................ virsh list --all
       Edit VM ............................. virsh edit <vm>
       Reboot VM ........................... virsh reboot <vm>
+      Shutdown VM ......................... virsh shutdown <vm>
+      Remove VM ........................... virsh undefine <vm>
+      Connect to running session .......... virt-viewer <vm>
+      Rename VM ........................... virsh domrename <old> <new>
+
+      ## Inspection
+      Get IP address for VM ............... virsh domifaddr <vm>
+      Connec to VM with VNC or Spice ...... remote-viewer <uri>
+
+      ## Network
+      Create network interface ............ virsh net-define <net>
+      Start network interface ............. virsh net-start <net>
+      List DHCP leases for interface ...... virsh net-dhcp-leases <net>
+      List interfaces ..................... virsh net-list
+      Edit XML of interface ............... virsh net-edit <net>
+
+      ## Vagrant
+      Add box ............................. vagrant box add --name <box> <path>
+      Initialize new box .................. vagrant init <box>
 
