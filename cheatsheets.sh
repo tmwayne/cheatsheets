@@ -1,10 +1,13 @@
 #!/bin/bash
 #
+# ------------------------------------------------------------------------------
 # Cheatsheets
+# ------------------------------------------------------------------------------
 #
 # Print a cheatsheet to the terminal to remind of useful commands
 #
 # Tyler Wayne © 2020
+#
 
 CUR_DIR=$( dirname $0 )
 THIS_PROG=$( basename $0 )
@@ -20,8 +23,7 @@ Help() {
   echo
 }
 
-## VARIABLES
-########################################
+# Arguments --------------------------------------------------------------------
 
 # Command-line arguments
 for arg in "$@"; do
@@ -46,9 +48,11 @@ while getopts ":h" opt; do
 done
 shift $((OPTIND-1))
 
-CS_DIR=${CHEATSHEETS_DIR:-/home/tyler/scripts/cheatsheets/}
+CS_DIR=${CHEATSHEETS_DIR:-$HOME/docs/cheatsheets/}
 
 CS=$CS_DIR/$1.txt
+
+# Assertions -------------------------------------------------------------------
 
 ## ASSERTIONS
 ########################################
@@ -58,9 +62,7 @@ if [ $# -lt 1 ]; then
   exit 1
 fi
 
-
-## MAIN
-########################################
+# Main -------------------------------------------------------------------------
 
 if [ -f "$CS" ]; then
 
