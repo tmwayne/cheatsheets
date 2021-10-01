@@ -1,0 +1,9 @@
+
+      ## Path-search
+      Find files .......................... kpsewhich <file>
+      List Tex env var .................... kpsewhich -var-value=<VAR>
+      Create kpath index .................. mktexlsr <dir>
+
+      ## Bibliographies
+      Clear Biber cache ................... rm --rf $(biber --cache)
+

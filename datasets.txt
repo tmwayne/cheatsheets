@@ -14,3 +14,6 @@
       CelebA .............................. mmlab.ie.cuhk.edu.hk/projects/CelebA.html
       Fashion MNIST ....................... tf.keras.datasets.fashion_mnist
 
+      ## Geo
+      Global heatmap ...................... strava.com/heatmap
+
