@@ -5,5 +5,5 @@
       Create kpath index .................. mktexlsr <dir>
 
       ## Bibliographies
-      Clear Biber cache ................... rm --rf $(biber --cache)
+      Clear Biber cache ................... rm -rf $(biber --cache)
 
