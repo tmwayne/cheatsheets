@@ -1,0 +1,12 @@
+
+      ## Environment
+      Print environment variables ......... printenv
+      Search man pages for string ......... man -k <str>
+      Print system limit .................. getconf <var>
+      Print real and effective ids ........ id
+
+      ## Time and Locales
+      List locale environment ............. locale
+      Print system time ................... timedatectl
+
+

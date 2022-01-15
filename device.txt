@@ -1,8 +1,17 @@
 
+      ## Kernel
+      List loaded modules ................. lsmod
+
       ## Information
       Get device info ..................... udevadm info --query=all --name=<dev>
       Watch device changes ................ udevadm monitor <args>
       Get CPU specs ....................... lscpu
+
+      ## Partitions
+      List partitions ..................... fdisk --list
+      List partitions ..................... parted -l
+      Print UUID for each partition ....... blkid
+      Resize partition .................... parted <dev> -- resizepart <num> <end>
 
       ## File systems
       List all filesystems ................ lsblk --fs
@@ -13,15 +22,11 @@
       List file system block info ......... dumpe2fs -h <dev>
       Shrink file system .................. resize2fs -M <dev>
       Hexdump a file stream ............... xxd -l <bytes> <dev>
+      Create virtual memory file system ... mount -t tmpfs <src> <mnt>
+      Print inode usage ................... df -i
 
-      ## Partitions
-      List partitions ..................... fdisk --list
-      List partitions ..................... parted -l
-      Print UUID for each partition ....... blkid
-      Resize partition .................... parted <dev> -- resizepart <num> <end>
-
-      ## Kernel
-      List loaded modules ................. lsmod
+      ## Files
+      Find file(s) by inode ............... find / -inum <inode>
 
       ## Printing
       List printers ....................... lpstat -d

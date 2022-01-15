@@ -1,0 +1,4 @@
+
+      ## General
+      Print info .......................... php -r 'phpinfo();'
+

@@ -34,3 +34,7 @@
       Remove unused containers, etc ....... docker system prune
       Remove dangling images .............. docker image prune
 
+      ## Namespaces & Cgroups
+      List namespaces ..................... lsns
+      Create a new namespace .............. unshare
+

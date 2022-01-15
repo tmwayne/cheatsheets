@@ -1,0 +1,4 @@
+
+      ## System
+      Adjust brightness ................... xbacklight -set <lvl>
+

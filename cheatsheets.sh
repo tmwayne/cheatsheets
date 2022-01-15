@@ -49,13 +49,9 @@ done
 shift $((OPTIND-1))
 
 CS_DIR=${CHEATSHEETS_DIR:-$HOME/docs/cheatsheets/}
-
 CS=$CS_DIR/$1.txt
 
 # Assertions -------------------------------------------------------------------
-
-## ASSERTIONS
-########################################
 
 if [ $# -lt 1 ]; then
   echo $USAGE

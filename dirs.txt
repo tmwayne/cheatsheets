@@ -1,4 +1,23 @@
 
+      ## Commands
+      Man page for important dirs ......... man 7 file-hierarchy
+      Man page for important dirs ......... man 7 hier
+      Print system paths .................. systemd-path
+
       ## Misc locations
       Libvirt images ...................... /var/lib/libvirt/images
+      POSIX shared memory ................. /dev/shm
 
+      ## System Information
+      Process specific info ............... /proc/<pid>/status
+      Network info ........................ /proc/net
+      File System info .................... /proc/sys/fs
+      Kernel settings ..................... /proc/sys/kernel
+      Networking and socket settings ...... /proc/sys/net
+      Memory-management settings .......... /proc/sys/vm
+
+      ## Files
+      Partitions with device IDs .......... /proc/partition
+      Swap information .................... /proc/swaps
+      Supported filesystems ............... /proc/filesystems
+      

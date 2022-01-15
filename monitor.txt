@@ -17,6 +17,7 @@
       Show file size ...................... du -sh
 
       ## Resource monitoring
+      Open top for control groups ......... systemd-cgtop
       Open top for IO ..................... iotop
       Monitor a specific process .......... pidstat
       List running jobs ................... ps -auxf
@@ -31,6 +32,7 @@
       Get PID of process by name .......... pgrep <process>
       List the files processes use ........ lsof -p <prog>
       System trace a program .............. strace <cmd>
+      Print summary of system calls ....... strace -c <cmd>
       List library calls of a program ..... ltrace <cmd>
       List shared library deps ............ ldd <cmd>
       Disassociate job from terminal ...... nohup <cmd> &>/dev/null &
