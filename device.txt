@@ -27,6 +27,10 @@
 
       ## Files
       Find file(s) by inode ............... find / -inum <inode>
+      List file attributes ................ lsattr
+      Dump list of all extended attr ...... getxattr -d <file>
+      Print file's ACLs ................... getfacl <file>
+      Set ACL ............................. setfacl -m <acl> <file>
 
       ## Printing
       List printers ....................... lpstat -d

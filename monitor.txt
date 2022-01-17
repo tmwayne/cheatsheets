@@ -39,6 +39,7 @@
       Sudo without switching homes ........ sudo -E <cmd>
       Log terminal session ................ script <file>
       Print info about process ............ prtstat
+      List processes using resource ....... fuser
 
       ## Inspect
       Show command definition ............. type <cmd>

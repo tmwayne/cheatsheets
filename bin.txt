@@ -38,9 +38,12 @@
       List shared libraries ............... readelf -d <bin> | grep NEEDED
       List dll loading .................... LD_DEBUG=libs <bin>
       List libraries known to loader ...... ldconfig -p
+      Determine soname .................... readelf -d <lib> | grep SONAME
+      Print rpath of binary ............... objdump -p <bin> | grep PATH
+      Update ld cache ..................... ldconfig -v
 
       ## Inspection
-      List objects in archive ............. ar -t <arch>
+      List objects in archive ............. ar -tv <arch>
       View relocation table ............... readelf --relocs <obj>
       Dissect object files ................ readelf -s <bin>
       Show binary's dynamic section ....... readelf -d <bin>

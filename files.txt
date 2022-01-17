@@ -1,0 +1,9 @@
+
+      ## System information
+      Partitions with device IDs .......... /proc/partition
+      Swap information .................... /proc/swaps
+      Supported filesystems ............... /proc/filesystems
+      
+      ## ArchLinux 
+      Pacman lock ......................... /var/lib/pacman/db.lck
+
