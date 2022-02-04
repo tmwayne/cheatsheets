@@ -2,6 +2,7 @@
       ## Commands
       Man page for important dirs ......... man 7 file-hierarchy
       Man page for important dirs ......... man 7 hier
+      Man page for /proc .................. man 5 proc
       Print system paths .................. systemd-path
       Print umask ......................... umask
       Set default ACL ..................... setfacl -d -m <acl> <dir>
@@ -17,4 +18,7 @@
       Kernel settings ..................... /proc/sys/kernel
       Networking and socket settings ...... /proc/sys/net
       Memory-management settings .......... /proc/sys/vm
+
+      ## Limits
+      Inotify limits ...................... /proc/sys/fs/inotify
 

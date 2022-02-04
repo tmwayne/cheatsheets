@@ -40,6 +40,7 @@
       Log terminal session ................ script <file>
       Print info about process ............ prtstat
       List processes using resource ....... fuser
+      Print process accounting info ....... lastcomm
 
       ## Inspect
       Show command definition ............. type <cmd>

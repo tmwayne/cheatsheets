@@ -28,3 +28,8 @@
       Add box ............................. vagrant box add --name <box> <path>
       Initialize new box .................. vagrant init <box>
 
+      ## Libvirt
+      Load nbd kernel module .............. modprobe nbd max_part=8
+      Mount qcow2 img as network block .... qemu-nbd --connect=/dev/nbd0 <img>
+      Unmount qcow2 as network block dev .. qemu-nbd --disconnect /dev/nbd0
+

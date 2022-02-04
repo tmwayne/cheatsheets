@@ -5,8 +5,10 @@
       Show which packages use a USE flag .. equery hasuse <flag>
 
       ## Upgrade
-      Sync ebuild repository .............. emerge-webrsync
+      Sync ebuild repository (dep) ........ emerge-webrsync
+      Update installed packages ........... emaint --auto -sync
       Full system upgrade ................. emerge -auvUD @world
+      Clean up ............................ emerge --ask --verbose --depclean
 
       ## Modify
       Add new USE flag .................... euse -E <flg>
