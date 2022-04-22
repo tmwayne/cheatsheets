@@ -15,8 +15,9 @@
       List ports used by program .......... lsof -i:<port>
       Print open TCP connections .......... netstat -nt
       List services listening to ports .... netstat -ntl
-      Display network socket info ......... ss
       View ports used by applications ..... rpcinfo -p
+      Display network socket info ......... ss
+      List tcp listening processes ........ ss -plt
 
       ## Interface management
       View visible interfaces ............. ip addr show
@@ -26,6 +27,7 @@
       Check if wifi is blocked ............ rfkill list
       Unblock wifi interface .............. rfkill unblock wifi
       Check WPA status .................... wpa_cli status
+      Inspect DNS resolver ................ resolvectl
 
       ## Remote connections
       Create new key ...................... ssh-keygen -b 2048 -t rsa

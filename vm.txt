@@ -3,6 +3,7 @@
       Create VM ........................... virt-install <specs>
       Clone VM ............................ virt-clone -o <orig> -n <name>
       Get OS options ...................... osinfo-query os
+      Build packer in debug mode .......... packer build -on-error=ask <file>
       
       ## Interaction
       List VMs ............................ virsh list --all
@@ -16,6 +17,7 @@
       ## Inspection
       Get IP address for VM ............... virsh domifaddr <vm>
       Connec to VM with VNC or Spice ...... remote-viewer <uri>
+      List all images ..................... machinectl list
 
       ## Network
       Create network interface ............ virsh net-define <net>
@@ -32,4 +34,8 @@
       Load nbd kernel module .............. modprobe nbd max_part=8
       Mount qcow2 img as network block .... qemu-nbd --connect=/dev/nbd0 <img>
       Unmount qcow2 as network block dev .. qemu-nbd --disconnect /dev/nbd0
+
+      ## LXD
+      Launch privileged container ......... lxc launch <img> <cnt> 
+      .....................................     -c security.privileged=true
 

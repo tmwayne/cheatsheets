@@ -6,7 +6,7 @@
 
       ## Upgrade
       Sync ebuild repository (dep) ........ emerge-webrsync
-      Update installed packages ........... emaint --auto -sync
+      Update installed packages ........... emaint --auto sync
       Full system upgrade ................. emerge -auvUD @world
       Clean up ............................ emerge --ask --verbose --depclean
 

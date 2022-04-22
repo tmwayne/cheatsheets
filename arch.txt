@@ -7,6 +7,7 @@
 
       ## Upgrade
       Full system upgrade ................. pacman -Syu
+      Remove pacman database lock ......... rm /var/lib/pacman/db.lck
 
       ## Removing
       Remove package and deps ............. pacman -Rsu <pkg>

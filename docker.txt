@@ -38,3 +38,9 @@
       List namespaces ..................... lsns
       Create a new namespace .............. unshare
 
+      ## Kubernetes
+      Check cluster status ................ kubectl get componentstatuses
+      List nodes .......................... kubectl get nodes
+      Get info about a node ............... kubectl describe node <node>
+      Launch K8s dashboard ................ kubectl proxy
+

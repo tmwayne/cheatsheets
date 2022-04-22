@@ -3,6 +3,8 @@
       Partitions with device IDs .......... /proc/partition
       Swap information .................... /proc/swaps
       Supported filesystems ............... /proc/filesystems
+      Resource limits set per process ..... /proc/<pid>/limits
+      Get process resource status ......... /proc/<pid>/status
       
       ## ArchLinux 
       Pacman lock ......................... /var/lib/pacman/db.lck

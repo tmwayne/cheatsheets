@@ -31,6 +31,9 @@
       Dump list of all extended attr ...... getxattr -d <file>
       Print file's ACLs ................... getfacl <file>
       Set ACL ............................. setfacl -m <acl> <file>
+      Print file capabililties ............ getcap <file>
+      Set file capabilities ............... setcap <file>
+      Locate binary, source, man pages .... whereis <cmd>
 
       ## Printing
       List printers ....................... lpstat -d

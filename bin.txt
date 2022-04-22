@@ -41,6 +41,7 @@
       Determine soname .................... readelf -d <lib> | grep SONAME
       Print rpath of binary ............... objdump -p <bin> | grep PATH
       Update ld cache ..................... ldconfig -v
+      Use cwd for run-time library path ... LD_LIBRARY_PATH=. <bin>
 
       ## Inspection
       List objects in archive ............. ar -tv <arch>

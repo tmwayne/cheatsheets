@@ -1,0 +1,5 @@
+
+      ## General
+      List last logins .................... last
+      Show logged in users and activity ... w
+
