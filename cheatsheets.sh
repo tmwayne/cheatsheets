@@ -13,7 +13,7 @@ THIS_PROG=$( basename $0 )
 USAGE="Usage: ${THIS_PROG} cheatsheet"
 edit=false
 
-HELP="
+HELP="\
 $USAGE
 Print cheatsheet to terminal with paging.
 
