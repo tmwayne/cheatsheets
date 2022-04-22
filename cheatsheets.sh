@@ -9,19 +9,18 @@
 # Tyler Wayne © 2020
 #
 
-CUR_DIR=$( dirname $0 )
 THIS_PROG=$( basename $0 )
 USAGE="Usage: ${THIS_PROG} cheatsheet"
+edit=false
 
-Help() {
-  # Function to display help at command line
-  echo $USAGE
-  echo "Print cheatsheet to terminal with paging."
-  echo
-  echo "Not many options at the moment:"
-  echo "  -h, --help                Print this help."
-  echo
-}
+HELP="
+$USAGE
+Print cheatsheet to terminal with paging.
+
+Options:
+  -e, --edit                Edit a cheatsheet
+  -h, --help                Print this help.
+"
 
 # Arguments --------------------------------------------------------------------
 
@@ -29,6 +28,7 @@ Help() {
 for arg in "$@"; do
   shift
   case "$arg" in
+    --edit)         set -- "$@" "-e" ;;
     --help)         set -- "$@" "-h" ;;
     --*)            echo "$THIS_PROG: unrecognized option '$arg'" >&2
                     echo "Try '$THIS_PROG --help' for more information."
@@ -38,9 +38,11 @@ for arg in "$@"; do
 done
 
 OPTIND=1
-while getopts ":h" opt; do
+while getopts ":eh" opt; do
   case $opt in
-    h)  Help; exit 0 ;;
+    e)  edit=true ;;
+    # h)  Help; exit 0 ;;
+    h)  echo "$HELP"; exit 0 ;;
     \?) echo "$THIS_PROG: unrecognized option '-$OPTARG'" >&2
         echo "Try '$THIS_PROG --help' for more information."
         exit 2 ;;
@@ -48,8 +50,9 @@ while getopts ":h" opt; do
 done
 shift $((OPTIND-1))
 
-CS_DIR=${CHEATSHEETS_DIR:-$HOME/docs/cheatsheets/}
-CS=$CS_DIR/$1.txt
+# Check if environment variable is set
+cs_dir=${CHEATSHEETS_DIR:-$HOME/docs/cheatsheets}
+cs=$cs_dir/$1.txt
 
 # Assertions -------------------------------------------------------------------
 
@@ -60,9 +63,15 @@ fi
 
 # Main -------------------------------------------------------------------------
 
-if [ -f "$CS" ]; then
+# TODO: if file doesn't exist, copy a cheatsheet template and open that.
+if $edit; then
+  $EDITOR $cs
+fi
 
-  file_length=`wc -l $CS | cut -d' ' -f1`
+if [ -f "$cs" ]; then
+
+  # On OSX, leading white space is added to wc output. Use awk to remove it.
+  file_length=`wc -l $cs | awk '{$1=$1}1' | cut -d' ' -f1`
   term_length=`tput lines`
 
   if [ $file_length -gt $term_length ]; then
@@ -71,6 +80,6 @@ if [ -f "$CS" ]; then
     output_pager=cat
   fi
 
-  cat $CS | $output_pager
+  $output_pager $cs
 fi
 
