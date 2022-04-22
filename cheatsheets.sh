@@ -66,9 +66,8 @@ fi
 # TODO: if file doesn't exist, copy a cheatsheet template and open that.
 if $edit; then
   $EDITOR $cs
-fi
 
-if [ -f "$cs" ]; then
+elif [ -f "$cs" ]; then
 
   # On OSX, leading white space is added to wc output. Use awk to remove it.
   file_length=`wc -l $cs | awk '{$1=$1}1' | cut -d' ' -f1`
