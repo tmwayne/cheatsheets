@@ -1,27 +1,50 @@
 #!/bin/bash
 #
 # ------------------------------------------------------------------------------
-# Cheatsheets
+# cheatsheets.sh
 # ------------------------------------------------------------------------------
 #
-# Print a cheatsheet to the terminal to remind of useful commands
+# Copyright © 2022 Tyler Wayne
 #
-# Tyler Wayne © 2020
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#     http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 #
 
 THIS_PROG=$( basename $0 )
 USAGE="Usage: ${THIS_PROG} cheatsheet"
-edit=false
 
 HELP="\
 $USAGE
-Print cheatsheet to terminal with paging.
+It's not cheating if you don't get caught..
 
 Options:
   -e, --edit                Edit a cheatsheet
-  -h, --help                Print this help."
+  -h, --help                Print this help
+  -V, --version             Print version info"
+
+VERSION="\
+Cheatsheets v1.0.0
+Copyright © 2022 Tyler Wayne
+Licensed under the Apache License, Version 2.0
+
+Written by Tyler Wayne."
 
 # Arguments --------------------------------------------------------------------
+
+# Default args
+edit=false
+
+# Environment variables
+cs_dir=${CHEATSHEETS_DIR:-$HOME/docs/cheatsheets}
 
 # Command-line arguments
 for arg in "$@"; do
@@ -29,6 +52,7 @@ for arg in "$@"; do
   case "$arg" in
     --edit)         set -- "$@" "-e" ;;
     --help)         set -- "$@" "-h" ;;
+    --version)      set -- "$@" "-V" ;;
     --*)            echo "$THIS_PROG: unrecognized option '$arg'" >&2
                     echo "Try '$THIS_PROG --help' for more information."
                     exit 2 ;;
@@ -37,11 +61,11 @@ for arg in "$@"; do
 done
 
 OPTIND=1
-while getopts ":eh" opt; do
+while getopts ":ehV" opt; do
   case $opt in
     e)  edit=true ;;
-    # h)  Help; exit 0 ;;
     h)  echo "$HELP"; exit 0 ;;
+    V)  echo "$VERSION"; exit 0 ;;
     \?) echo "$THIS_PROG: unrecognized option '-$OPTARG'" >&2
         echo "Try '$THIS_PROG --help' for more information."
         exit 2 ;;
@@ -49,8 +73,6 @@ while getopts ":eh" opt; do
 done
 shift $((OPTIND-1))
 
-# Check if environment variable is set
-cs_dir=${CHEATSHEETS_DIR:-$HOME/docs/cheatsheets}
 cs=$cs_dir/$1.txt
 
 # Assertions -------------------------------------------------------------------
