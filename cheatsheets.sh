@@ -19,8 +19,7 @@ Print cheatsheet to terminal with paging.
 
 Options:
   -e, --edit                Edit a cheatsheet
-  -h, --help                Print this help.
-"
+  -h, --help                Print this help."
 
 # Arguments --------------------------------------------------------------------
 
