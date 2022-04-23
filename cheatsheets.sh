@@ -40,6 +40,11 @@ Written by Tyler Wayne."
 
 # Arguments --------------------------------------------------------------------
 
+if [ $# -lt 1 ]; then
+  echo $USAGE
+  exit 1
+fi
+
 # Default args
 edit=false
 
@@ -74,13 +79,6 @@ done
 shift $((OPTIND-1))
 
 cs=$cs_dir/$1.txt
-
-# Assertions -------------------------------------------------------------------
-
-if [ $# -lt 1 ]; then
-  echo $USAGE
-  exit 1
-fi
 
 # Main -------------------------------------------------------------------------
 
