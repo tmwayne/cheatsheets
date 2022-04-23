@@ -20,7 +20,7 @@
 #
 
 THIS_PROG=$( basename $0 )
-USAGE="Usage: ${THIS_PROG} cheatsheet"
+USAGE="Usage: ${THIS_PROG} [-e] cheatsheet"
 
 HELP="\
 $USAGE
