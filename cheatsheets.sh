@@ -28,6 +28,7 @@ It's not cheating if you don't get caught..
 
 Options:
   -e, --edit                Edit a cheatsheet
+  -l, --list                List cheatsheets
   -h, --help                Print this help
   -V, --version             Print version info"
 
@@ -40,13 +41,9 @@ Written by Tyler Wayne."
 
 # Arguments --------------------------------------------------------------------
 
-if [ $# -lt 1 ]; then
-  echo $USAGE
-  exit 1
-fi
-
 # Default args
-edit=false
+default="cheat"
+action=$default
 
 # Environment variables
 cs_dir=${CHEATSHEETS_DIR:-$HOME/docs/cheatsheets}
@@ -56,6 +53,7 @@ for arg in "$@"; do
   shift
   case "$arg" in
     --edit)         set -- "$@" "-e" ;;
+    --list)         set == "$@" "-l" ;;
     --help)         set -- "$@" "-h" ;;
     --version)      set -- "$@" "-V" ;;
     --*)            echo "$THIS_PROG: unrecognized option '$arg'" >&2
@@ -66,10 +64,12 @@ for arg in "$@"; do
 done
 
 OPTIND=1
-while getopts ":ehV" opt; do
+while getopts ":ehlV" opt; do
   case $opt in
-    e)  edit=true ;;
+    # e)  edit=true ;;
+    e)  action="edit" ;;
     h)  echo "$HELP"; exit 0 ;;
+    l)  action="list" ;;
     V)  echo "$VERSION"; exit 0 ;;
     \?) echo "$THIS_PROG: unrecognized option '-$OPTARG'" >&2
         echo "Try '$THIS_PROG --help' for more information."
@@ -80,24 +80,45 @@ shift $((OPTIND-1))
 
 cs=$cs_dir/$1.txt
 
+# TODO: add this check back, but make exception for "list" action
+# if [ $# -lt 1 ]; then
+  # echo $USAGE
+  # exit 1
+# fi
+
 # Main -------------------------------------------------------------------------
 
 # TODO: if file doesn't exist, copy a cheatsheet template and open that.
-if $edit; then
+edit() {
   $EDITOR $cs
+}
 
-elif [ -f "$cs" ]; then
+cheat() {
+  if [ -f "$cs" ]; then
+    # On OSX, leading white space is added to wc output. Use awk to remove it.
+    file_length=`wc -l $cs | awk '{$1=$1}1' | cut -d' ' -f1`
+    term_length=`tput lines`
 
-  # On OSX, leading white space is added to wc output. Use awk to remove it.
-  file_length=`wc -l $cs | awk '{$1=$1}1' | cut -d' ' -f1`
-  term_length=`tput lines`
+    # Page the cheatsheet if it's longer than the terminal
+    if [ $file_length -gt $term_length ]; then
+      output_pager=less
+    else
+      output_pager=cat
+    fi
 
-  if [ $file_length -gt $term_length ]; then
-    output_pager=less
-  else
-    output_pager=cat
+    $output_pager $cs
   fi
+}
 
-  $output_pager $cs
-fi
+list() {
+  # Strip dirname and suffix
+  ls $cs_dir/*.txt | sed 's#.*/\(.*\)\..*#\1#'
+}
+
+case "$action" in 
+  edit)   edit ;;
+  cheat)  cheat ;;
+  list)   list ;;
+  *)     echo "Error: action not recognized"; exit 3 ;;
+esac
 
