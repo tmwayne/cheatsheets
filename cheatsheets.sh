@@ -53,7 +53,7 @@ for arg in "$@"; do
   shift
   case "$arg" in
     --edit)         set -- "$@" "-e" ;;
-    --list)         set == "$@" "-l" ;;
+    --list)         set -- "$@" "-l" ;;
     --help)         set -- "$@" "-h" ;;
     --version)      set -- "$@" "-V" ;;
     --*)            echo "$THIS_PROG: unrecognized option '$arg'" >&2
