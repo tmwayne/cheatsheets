@@ -21,3 +21,6 @@
       Run coverage with pytest ............ pytest --cov=src
       Run coverage report ................. coverage run --source <s> -m pytest
 
+      ## IPython
+      Create profile with config .......... ipython profile create [name]
+
