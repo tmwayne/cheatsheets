@@ -4,7 +4,7 @@
 # cheatsheets.sh
 # ------------------------------------------------------------------------------
 #
-# Copyright © 2022 Tyler Wayne
+# Copyright (c) 2022 Tyler Wayne
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -34,7 +34,7 @@ Options:
 
 VERSION="\
 Cheatsheets v1.0.0
-Copyright © 2022 Tyler Wayne
+Copyright (c) 2022 Tyler Wayne
 Licensed under the Apache License, Version 2.0
 
 Written by Tyler Wayne."
@@ -66,7 +66,6 @@ done
 OPTIND=1
 while getopts ":ehlV" opt; do
   case $opt in
-    # e)  edit=true ;;
     e)  action="edit" ;;
     h)  echo "$HELP"; exit 0 ;;
     l)  action="list" ;;
