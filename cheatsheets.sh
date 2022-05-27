@@ -78,17 +78,16 @@ done
 shift $((OPTIND-1))
 
 cs=$cs_dir/$1.txt
-
-# TODO: add this check back, but make exception for "list" action
-# if [ $# -lt 1 ]; then
-  # echo $USAGE
-  # exit 1
-# fi
+nargs=$#
 
 # Main -------------------------------------------------------------------------
 
 # TODO: if file doesn't exist, copy a cheatsheet template and open that.
 edit() {
+  if [ $nargs -lt 1 ]; then
+    echo $USAGE
+    exit 1
+  fi
   $EDITOR $cs
 }
 
@@ -99,8 +98,8 @@ cheat() {
     term_length=`tput lines`
 
     # Page the cheatsheet if it's longer than the terminal
-    if [ $file_length -gt $term_length ]; then
-      output_pager=less
+    if [ $file_length -gt $term_length ] && [ -n "$PAGER" ]; then
+      output_pager=$PAGER
     else
       output_pager=cat
     fi
@@ -115,9 +114,9 @@ list() {
 }
 
 case "$action" in 
-  edit)   edit ;;
+  edit)   edit  ;;
   cheat)  cheat ;;
-  list)   list ;;
+  list)   list  ;;
   *)     echo "Error: action not recognized"; exit 3 ;;
 esac
 
