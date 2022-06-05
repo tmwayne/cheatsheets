@@ -2,6 +2,7 @@
       ## Preprocess
       Preprocess C code ................... cpp <file>
       Run preprocessor .................... nasm -E <src>
+      Print include stack ................. echo | gcc -E -Wp,-v -
 
       ## Compiling
       Generate object file ................ nasm -felf64 <asm>
