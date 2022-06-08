@@ -11,6 +11,7 @@
       Add breakpoint ...................... break <function>
       Add file breakpoint ................. break <file>.c:<line>
       Add conditional breakpoint .......... break <line> if <condition>
+      Delete all breakpoints .............. delete
 
       ## Running the program
       Run the next line ................... step

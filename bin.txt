@@ -63,6 +63,7 @@
       List coredumps ...................... coredumpctl list
       Print details of coredump ........... coredumpctl info <match>
       Examine coredump with GDB ........... coredumpctl gdb <match>
+      Run valgrind ........................ valgrind --leak-check=yes <bin>
 
       ## Misc C
       List system error codes ............. errno -l
