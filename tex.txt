@@ -4,6 +4,9 @@
       List Tex env var .................... kpsewhich -var-value=<VAR>
       Create kpath index .................. mktexlsr <dir>
 
+      ## Package Management
+      Install package ..................... tlmgr install <pkg>
+
       ## Bibliographies
       Clear Biber cache ................... rm -rf $(biber --cache)
 
