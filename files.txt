@@ -5,6 +5,7 @@
       Supported filesystems ............... /proc/filesystems
       Resource limits set per process ..... /proc/<pid>/limits
       Get process resource status ......... /proc/<pid>/status
+      View current set of locks ........... /proc/locks
       
       ## ArchLinux 
       Pacman lock ......................... /var/lib/pacman/db.lck

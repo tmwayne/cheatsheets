@@ -34,6 +34,8 @@
       Print file capabililties ............ getcap <file>
       Set file capabilities ............... setcap <file>
       Locate binary, source, man pages .... whereis <cmd>
+      Populate file with zeros ............ dd if=/dev/zero of=<file> bs=1 count=<size>
+      Dump file in various formats ........ od <file>
 
       ## Printing
       List printers ....................... lpstat -d

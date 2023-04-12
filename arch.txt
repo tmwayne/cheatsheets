@@ -6,12 +6,16 @@
       List package owner of a library ..... pacman -Qo <lib>
 
       ## Upgrade
+      Upgrade keyring ..................... pacman -Sy archlinux-keyring
       Full system upgrade ................. pacman -Syu
       Remove pacman database lock ......... rm /var/lib/pacman/db.lck
 
       ## Removing
       Remove package and deps ............. pacman -Rsu <pkg>
       Remove orphans ...................... pacman -Qtdq | pacman -Rns -
+
+      ## Buildind
+      Build and install PKGBUILD .......... makepkg -si
 
       ## System
       Adjust brightness ................... xbacklight -set <lvl>

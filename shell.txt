@@ -4,6 +4,9 @@
       Search man pages for string ......... man -k <str>
       Print system limit .................. getconf <var>
       Print real and effective ids ........ id
+      View terminal attributes ............ stty
+      Reset terminal attributes ........... stty sane
+      Print name of terminal .............. tty
 
       ## Time and Locales
       List locale environment ............. locale
