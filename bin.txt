@@ -8,6 +8,7 @@
       Generate object file ................ nasm -felf64 <asm>
       Generate executable ................. ld <obj>
       Create an archive ................... ar -rcs <arch> <obj1> <obj2> [...]
+      Index an archive .................... ranlib <arch>
       Compile to assembly ................. gcc -S <prog>
 
       ## Disassembling
