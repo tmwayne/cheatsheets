@@ -11,7 +11,7 @@ Make sure that directory is in your system `PATH`.
 Name the symlink `cs` for easy typing on the command line.
 
 Set `CHEATSHEETS_DIR` environment variable to directory with cheatsheets.
-It defaults to `~/docs/cheatsheets`.
+It defaults to `~/.cheatsheets.d`.
 
 ## Usage
 

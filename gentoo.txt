@@ -1,17 +1,32 @@
 
-      ## Inspection
+      ## Package Management
+      Sync repos set to autosync .......... emaint --auto sync
+      Sync ebuild repository .............. emerge-webrsync
       Find package ........................ emerge -a <pkg>
+      Search for package .................. emerge -s <regex>
+      Full system upgrade ................. emerge -auvUD @world
+      Remove package ...................... emerge --deselect <pkg>
+      Prune packages ...................... emerge -av --depclean
+      Clean up cancelled compile .......... ebuild `equery which <pkg>` clean
+
+      ## Package Information
       Display USE flags for package ....... equery uses <pkg>
       Show which packages use a USE flag .. equery hasuse <flag>
+      Display package info ................ epkginfo <pkg>
+      List installed packages ............. qlist -IRv
+      Read installed package messages ..... eread
+      Verify installed package ............ qcheck <pkg>
 
-      ## Upgrade
-      Sync ebuild repository (dep) ........ emerge-webrsync
-      Update installed packages ........... emaint --auto sync
-      Full system upgrade ................. emerge -auvUD @world
-      Clean up ............................ emerge --ask --verbose --depclean
-
-      ## Modify
-      Add new USE flag .................... euse -E <flg>
+      ## Config Modfication
+      Enable USE flag ..................... euse -E <flag>
+      Disable USE flag .................... euse -D <flag>
+      Remove (prune) USE flag ............. euse -P <flag>
       Manage configuration changes ........ dispatch-conf
       Manage configuration changes ........ etc-update
+
+      ## OpenRC
+      Add service to run level ............ rc-update add <svc> <level>
+      Start service ....................... rc-service <svc> start
+      Check status of service ............. rc-service <svc> status
+      List status of all services ......... rc-status --all
 
