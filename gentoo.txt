@@ -4,7 +4,7 @@
       Sync ebuild repository .............. emerge-webrsync
       Find package ........................ emerge -a <pkg>
       Search for package .................. emerge -s <regex>
-      Full system upgrade ................. emerge -auvUD @world
+      Full system upgrade ................. emerge -auvND @world
       Remove package ...................... emerge --deselect <pkg>
       Prune packages ...................... emerge -av --depclean
       Clean up cancelled compile .......... ebuild `equery which <pkg>` clean
