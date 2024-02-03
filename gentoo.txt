@@ -8,6 +8,7 @@
       Remove package ...................... emerge --deselect <pkg>
       Prune packages ...................... emerge -av --depclean
       Clean up cancelled compile .......... ebuild `equery which <pkg>` clean
+      Resume interruped emerge ............ emerge --resume
 
       ## Package Information
       Display USE flags for package ....... equery uses <pkg>
