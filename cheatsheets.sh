@@ -46,7 +46,7 @@ default="cheat"
 action=$default
 
 # Environment variables
-cs_dir=${CHEATSHEETS_DIR:-$HOME/.cheatsheets.d}
+cs_dir=${CHEATSHEETS_DIR:-$HOME/.cheatsheets}
 
 # Command-line arguments
 for arg in "$@"; do
