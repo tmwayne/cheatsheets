@@ -17,6 +17,7 @@
       List installed packages ............. qlist -IRv
       Read installed package messages ..... eread
       Verify installed package ............ qcheck <pkg>
+      List portage applets ................ q
 
       ## Config Modfication
       Enable USE flag ..................... euse -E <flag>
