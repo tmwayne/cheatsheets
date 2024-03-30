@@ -20,7 +20,7 @@
 
       ## Interaction
       Get port of container ............... docker port <cnt> <port>
-      Open shell in existing container .... docker exec -it <id> bash
+      Open shell in container ............. docker exec -it <id> bash
       View stdout of container ............ docker logs <cnt>
       
       ## Repos

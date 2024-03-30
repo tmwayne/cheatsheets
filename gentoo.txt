@@ -12,7 +12,7 @@
 
       ## Package Information
       Display USE flags for package ....... equery uses <pkg>
-      Show which packages use a USE flag .. equery hasuse <flag>
+      Show packagaes using a USE flag ..... equery hasuse <flag>
       Display package info ................ epkginfo <pkg>
       List installed packages ............. qlist -IRv
       Read installed package messages ..... eread

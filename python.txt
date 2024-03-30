@@ -16,7 +16,7 @@
       Turn off traceback .................. pytest --tb=no
       Allow output to be printed .......... pytest --capture=no
       Show additional test info ........... pytest -r
-      Run tests matching with substring ... pytest -k <substring>
+      Run tests matching substring ........ pytest -k <substring>
       Show fixtures ....................... pytest --fixtures 
       Run coverage with pytest ............ pytest --cov=src
       Run coverage report ................. coverage run --source <s> -m pytest
