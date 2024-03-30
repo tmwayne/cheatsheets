@@ -1,0 +1,14 @@
+
+      ## Special variables
+      Default variable ............... $_
+      Line number of read line ....... $.
+      Handle of current file ......... ARGV
+      Arguments passed ot perl ....... @ARGV
+      Input record separator ......... $/
+      After print append ............. $\
+      Match from pattern match ....... $1, $2, ...
+      Outfield field separator ....... $,
+      Array value separator .......... $"
+      Fields of split input .......... @F
+      Environment variables .......... %ENV
+
