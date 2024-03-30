@@ -13,3 +13,7 @@
       List locale environment ........ locale
       Print system time .............. timedatectl
 
+      ## Misc
+      Permute input lines ............ shuf
+      Generate random number ......... echo $RANDOM
+
