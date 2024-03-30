@@ -1,34 +1,34 @@
 
       ## Package Management
-      Sync repos set to autosync .......... emaint --auto sync
-      Sync ebuild repository .............. emerge-webrsync
-      Find package ........................ emerge -a <pkg>
-      Search for package .................. emerge -s <regex>
-      Full system upgrade ................. emerge -auvND @world
-      Remove package ...................... emerge --deselect <pkg>
-      Prune packages ...................... emerge -av --depclean
-      Clean up cancelled compile .......... ebuild `equery which <pkg>` clean
-      Resume interruped emerge ............ emerge --resume
+      Sync repos set to autosync ..... emaint --auto sync
+      Sync ebuild repository ......... emerge-webrsync
+      Find package ................... emerge -a <pkg>
+      Search for package ............. emerge -s <regex>
+      Full system upgrade ............ emerge -auvND @world
+      Remove package ................. emerge --deselect <pkg>
+      Prune packages ................. emerge -av --depclean
+      Clean up cancelled compile ..... ebuild `equery which <pkg>` clean
+      Resume interruped emerge ....... emerge --resume
 
       ## Package Information
-      Display USE flags for package ....... equery uses <pkg>
-      Show packagaes using a USE flag ..... equery hasuse <flag>
-      Display package info ................ epkginfo <pkg>
-      List installed packages ............. qlist -IRv
-      Read installed package messages ..... eread
-      Verify installed package ............ qcheck <pkg>
-      List portage applets ................ q
+      Display USE flags for package .. equery uses <pkg>
+      Show packages using USE flag ... equery hasuse <flag>
+      Display package info ........... epkginfo <pkg>
+      List installed packages ........ qlist -IRv
+      Read installation messages ..... eread
+      Verify installed package ....... qcheck <pkg>
+      List portage applets ........... q
 
       ## Config Modfication
-      Enable USE flag ..................... euse -E <flag>
-      Disable USE flag .................... euse -D <flag>
-      Remove (prune) USE flag ............. euse -P <flag>
-      Manage configuration changes ........ dispatch-conf
-      Manage configuration changes ........ etc-update
+      Enable USE flag ................ euse -E <flag>
+      Disable USE flag ............... euse -D <flag>
+      Remove (prune) USE flag ........ euse -P <flag>
+      Manage configuration changes ... dispatch-conf
+      Manage configuration changes ... etc-update
 
       ## OpenRC
-      Add service to run level ............ rc-update add <svc> <level>
-      Start service ....................... rc-service <svc> start
-      Check status of service ............. rc-service <svc> status
-      List status of all services ......... rc-status --all
+      Add service to run level ....... rc-update add <svc> <level>
+      Start service .................. rc-service <svc> start
+      Check status of service ........ rc-service <svc> status
+      List status of all services .... rc-status --all
 

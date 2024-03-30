@@ -1,22 +1,22 @@
 
       ## Listing packages
-      List explicitly install packages .... pacman -Qe
-      List native packages ................ pacman -Qn
-      Search package database ............. pacman -Ss <pkg>
-      List package owner of a library ..... pacman -Qo <lib>
+      List explicitly install pkgs ... pacman -Qe
+      List native packages ........... pacman -Qn
+      Search package database ........ pacman -Ss <pkg>
+      List package owner of library .. pacman -Qo <lib>
 
       ## Upgrade
-      Upgrade keyring ..................... pacman -Sy archlinux-keyring
-      Full system upgrade ................. pacman -Syu
-      Remove pacman database lock ......... rm /var/lib/pacman/db.lck
+      Upgrade keyring ................ pacman -Sy archlinux-keyring
+      Full system upgrade ............ pacman -Syu
+      Remove pacman database lock .... rm /var/lib/pacman/db.lck
 
       ## Removing
-      Remove package and deps ............. pacman -Rsu <pkg>
-      Remove orphans ...................... pacman -Qtdq | pacman -Rns -
+      Remove package and deps ........ pacman -Rsu <pkg>
+      Remove orphans ................. pacman -Qtdq | pacman -Rns -
 
       ## Buildind
-      Build and install PKGBUILD .......... makepkg -si
+      Build and install PKGBUILD ..... pkg -si
 
       ## System
-      Adjust brightness ................... xbacklight -set <lvl>
+      Adjust brightness .............. xbacklight -set <lvl>
 

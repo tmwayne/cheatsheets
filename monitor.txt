@@ -1,51 +1,51 @@
 
       ## Computer specs
-      Print various hardware info ......... uname -a
-      Print architecture parameters ....... getconf -a
-      Show CPU specs ...................... cat /proc/cpuinfo
-      Show memory specs ................... cat /proc/meminfo
-      Show disk stats ..................... cat /proc/diskstats
-      Show devices ........................ cat /proc/devices
-      Show other hardware info ............ dmidecode
-      Print distro information ............ lsb_release -a
-      Show available IPC facilities ....... lsipc
-      Show activity in IPC subsystems ..... ipcs
+      Print various hardware info .... uname -a
+      Print architecture parameters .. getconf -a
+      Show CPU specs ................. cat /proc/cpuinfo
+      Show memory specs .............. cat /proc/meminfo
+      Show disk stats ................ cat /proc/diskstats
+      Show devices ................... cat /proc/devices
+      Show other hardware info ....... dmidecode
+      Print distro information ....... lsb_release -a
+      Show available IPC facilities .. lsipc
+      Show IPC subsystem activity .... ipcs
 
       ## Resource information
-      Show memory use ..................... free -h
-      Show disk availability .............. df -h
-      Show file size ...................... du -sh
+      Show memory use ................ free -h
+      Show disk availability ......... df -h
+      Show file size ................. du -sh
 
       ## Resource monitoring
-      Open top for control groups ......... systemd-cgtop
-      Open top for IO ..................... iotop
-      Monitor a specific process .......... pidstat
-      List running jobs ................... ps -auxf
-      List process tree ................... pstree
-      List uptime and load averages ....... uptime
-      List IO information ................. iostat
-      List domain sockets in use .......... lsof -U
-      Print kernel ring buffer ............ dmesg
-      Watch kernel messages ............... dmesg --human -w
+      Open top for control groups .... systemd-cgtop
+      Open top for IO ................ iotop
+      Monitor a specific process ..... pidstat
+      List running jobs .............. ps -auxf
+      List process tree .............. pstree
+      List uptime and load averages .. uptime
+      List IO information ............ iostat
+      List domain sockets in use ..... lsof -U
+      Print kernel ring buffer ....... dmesg
+      Watch kernel messages .......... dmesg --human -w
 
       ## Process management
-      Get PID of process by name .......... pgrep <process>
-      List the files processes use ........ lsof -p <prog>
-      System trace a program .............. strace <cmd>
-      Print summary of system calls ....... strace -c <cmd>
-      List library calls of a program ..... ltrace <cmd>
-      List shared library deps ............ ldd <cmd>
-      Disassociate job from terminal ...... nohup <cmd> &>/dev/null &
-      Sudo without switching homes ........ sudo -E <cmd>
-      Log terminal session ................ script <file>
-      Print info about process ............ prtstat
-      List processes using resource ....... fuser
-      Print process accounting info ....... lastcomm
-      Print control groups ................ systemd-cgls
-      List resource usage by cgroup ....... systemd-cgtop
-      Retrieve or modify rlimits .......... prlimit --pid <pid>
+      Get PID of process by name ..... pgrep <process>
+      List the files processes use ... lsof -p <prog>
+      System trace a program ......... strace <cmd>
+      Print summary of system calls .. strace -c <cmd>
+      List binary's program calls .... ltrace <cmd>
+      List shared library deps ....... ldd <cmd>
+      Disassociate job from terminal . nohup <cmd> &>/dev/null &
+      Sudo without switching homes ... sudo -E <cmd>
+      Log terminal session ........... script <file>
+      Print info about process ....... prtstat
+      List processes using resource .. fuser
+      Print process accounting info .. lastcomm
+      Print control groups ........... systemd-cgls
+      List resource usage by cgroup .. systemd-cgtop
+      Retrieve or modify rlimits ..... prlimit --pid <pid>
       Send a signal to process command .... killall <cmd>
 
       ## Inspect
-      Show command definition ............. type <cmd>
+      Show command definition ........ type <cmd>
 

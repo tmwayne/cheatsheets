@@ -1,10 +1,10 @@
 
       ## SELinux
-      Check status ........................ sestatus
-      Check mode of operation ............. getenforce
-      Change mode of operation ............ setenforce
-      View policy modules ................. semodule -l
-      Get boolean values .................. getsebool -a
-      Change boolean value ................ setsebool -P <var> <val>
+      Check status ................... sestatus
+      Check mode of operation ........ getenforce
+      Change mode of operation ....... setenforce
+      View policy modules ............ semodule -l
+      Get boolean values ............. getsebool -a
+      Change boolean value ........... setsebool -P <var> <val>
 
 

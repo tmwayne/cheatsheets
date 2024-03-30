@@ -1,46 +1,46 @@
 
       ## General
-      View current daemon config .......... docker info
+      View current daemon config ..... docker info
 
       ## Basics
-      Build image ......................... docker build -t <img> .
-      Run a named container ............... docker run --name <cnt> <img>
-      Run detached container .............. docker run -d <img>
-      Run interactive container ........... docker run -i <cnt>
+      Build image .................... docker build -t <img> .
+      Run a named container .......... docker run --name <cnt> <img>
+      Run detached container ......... docker run -d <img>
+      Run interactive container ...... docker run -i <cnt>
 
       ## Container Management
-      Rename container .................... docker rename <old> <new>
-      Attach running container ............ docker attach <cnt>
+      Rename container ............... docker rename <old> <new>
+      Attach running container ....... docker attach <cnt>
 
       ## Image Management
-      Rename image ........................ docker tag <old> <new>
+      Rename image ................... docker tag <old> <new>
 
       ## Docker-compose
-      Run compose in detached ............. docker-compose up -d
+      Run compose in detached ........ docker-compose up -d
 
       ## Interaction
-      Get port of container ............... docker port <cnt> <port>
-      Open shell in container ............. docker exec -it <id> bash
-      View stdout of container ............ docker logs <cnt>
+      Get port of container .......... docker port <cnt> <port>
+      Open shell in container ........ docker exec -it <id> bash
+      View stdout of container ....... docker logs <cnt>
       
       ## Repos
-      Commit docker image ................. docker commit <cnt> <img>
+      Commit docker image ............ docker commit <cnt> <img>
 
       ## Clean up
-      Kill all containers ................. docker kill $(docker ps -q)
-      List dangling volumes ............... docker volume ls -qf dangling=true
-      Remove volume ....................... docker volume rm
-      Remove unused volumes ............... docker volume prune
-      Remove unused containers, etc ....... docker system prune
-      Remove dangling images .............. docker image prune
+      Kill all containers ............ docker kill $(docker ps -q)
+      List dangling volumes .......... docker volume ls -qf dangling=true
+      Remove volume .................. docker volume rm
+      Remove unused volumes .......... docker volume prune
+      Remove unused containers, etc .. docker system prune
+      Remove dangling images ......... docker image prune
 
       ## Namespaces & Cgroups
-      List namespaces ..................... lsns
-      Create a new namespace .............. unshare
+      List namespaces ................ lsns
+      Create a new namespace ......... unshare
 
       ## Kubernetes
-      Check cluster status ................ kubectl get componentstatuses
-      List nodes .......................... kubectl get nodes
-      Get info about a node ............... kubectl describe node <node>
-      Launch K8s dashboard ................ kubectl proxy
+      Check cluster status ........... kubectl get componentstatuses
+      List nodes ..................... des
+      Get info about a node .......... describe node <node>
+      Launch K8s dashboard ........... kubectl proxy
 

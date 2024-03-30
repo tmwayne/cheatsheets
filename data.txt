@@ -1,4 +1,4 @@
 
       ## Inspect
-      Show data in fixed column layout .... column --table -s<sep>
+      Show data in fixed col layout .. column --table -s<sep>
 

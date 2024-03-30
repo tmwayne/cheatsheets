@@ -1,44 +1,44 @@
 
       ## Kernel
-      List loaded modules ................. lsmod
-      Print info about module ............. modinfo
+      List loaded modules ............ lsmod
+      Print info about module ........ modinfo
 
       ## Information
-      Get device info ..................... udevadm info --query=all --name=<dev>
-      Watch device changes ................ udevadm monitor <args>
-      Get CPU specs ....................... lscpu
+      Get device info ................ udevadm info --query=all --name=<dev>
+      Watch device changes ........... udevadm monitor <args>
+      Get CPU specs .................. lscpu
 
       ## Partitions
-      List partitions ..................... fdisk --list
-      List partitions ..................... parted -l
-      Print UUID for each partition ....... blkid
-      Resize partition .................... parted <dev> -- resizepart <num> <end>
+      List partitions ................ fdisk --list
+      List partitions ................ parted -l
+      Print UUID for each partition .. blkid
+      Resize partition ............... parted <dev> -- resizepart <num> <end>
 
       ## File systems
-      List all filesystems ................ lsblk --fs
-      Mount a filesystem .................. mount -t <type> <dev> <mountpoint>
-      Print mounted filesystems ........... mount
-      Check and repair filesystem ......... fsck <dev>
-      Check ext# filesystem ............... e2fsck <dev>
-      List file system block info ......... dumpe2fs -h <dev>
-      Shrink file system .................. resize2fs -M <dev>
-      Hexdump a file stream ............... xxd -l <bytes> <dev>
+      List all filesystems ........... lsblk --fs
+      Mount a filesystem ............. mount -t <type> <dev> <mountpoint>
+      Print mounted filesystems ...... mount
+      Check and repair filesystem .... fsck <dev>
+      Check ext# filesystem .......... e2fsck <dev>
+      List file system block info .... dumpe2fs -h <dev>
+      Shrink file system ............. resize2fs -M <dev>
+      Hexdump a file stream .......... xxd -l <bytes> <dev>
       Create virtual memory file system ... mount -t tmpfs <src> <mnt>
-      Print inode usage ................... df -i
+      Print inode usage .............. df -i
 
       ## Files
-      Find file(s) by inode ............... find / -inum <inode>
-      List file attributes ................ lsattr
-      Dump list of all extended attr ...... getxattr -d <file>
-      Print file's ACLs ................... getfacl <file>
-      Set ACL ............................. setfacl -m <acl> <file>
-      Print file capabililties ............ getcap <file>
-      Set file capabilities ............... setcap <file>
+      Find file(s) by inode .......... find / -inum <inode>
+      List file attributes ........... lsattr
+      Dump list of all extended attr . getxattr -d <file>
+      Print file's ACLs .............. getfacl <file>
+      Set ACL ........................ setfacl -m <acl> <file>
+      Print file capabililties ....... getcap <file>
+      Set file capabilities .......... setcap <file>
       Locate binary, source, man pages .... whereis <cmd>
-      Populate file with zeros ............ dd if=/dev/zero of=<file> bs=1 count=<size>
-      Dump file in various formats ........ od <file>
+      Populate file with zeros ....... dd if=/dev/zero of=<file> bs=1 count=<size>
+      Dump file in various formats ... od <file>
 
       ## Printing
-      List printers ....................... lpstat -d
-      Print file .......................... lp <file>
+      List printers .................. lpstat -d
+      Print file ..................... lp <file>
 

@@ -1,12 +1,12 @@
 
       ## Package Management
-      Install Cask ........................ brew install --cask <pkg>
-      List installed packages ............. brew install list
+      Install Cask ................... brew install --cask <pkg>
+      List installed packages ........ brew install list
 
       ## Device Management
-      Pair bluetooth device ............... blueutil --pair <dev>
-      Connect bluetooth device ............ blueutil --connect <dev>
+      Pair bluetooth device .......... blueutil --pair <dev>
+      Connect bluetooth device ....... blueutil --connect <dev>
 
       ## Network Management
-      Monitor network traffic ............. nettop -P
+      Monitor network traffic ........ nettop -P
 

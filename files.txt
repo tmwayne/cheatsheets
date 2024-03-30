@@ -1,12 +1,12 @@
 
       ## System information
-      Partitions with device IDs .......... /proc/partition
-      Swap information .................... /proc/swaps
-      Supported filesystems ............... /proc/filesystems
-      Resource limits set per process ..... /proc/<pid>/limits
-      Get process resource status ......... /proc/<pid>/status
-      View current set of locks ........... /proc/locks
+      Partitions with device IDs ..... /proc/partition
+      Swap information ............... /proc/swaps
+      Supported filesystems .......... /proc/filesystems
+      Set process resource limits .... /proc/<pid>/limits
+      Get process resource status .... /proc/<pid>/status
+      View current set of locks ...... /proc/locks
       
       ## ArchLinux 
-      Pacman lock ......................... /var/lib/pacman/db.lck
+      Pacman lock .................... /var/lib/pacman/db.lck
 

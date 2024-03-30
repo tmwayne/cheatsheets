@@ -1,27 +1,27 @@
 
       ## Inspection
-      Print all locals .................... info locals
-      Print first n elements of array ..... print *<array>@<n>
-      Set gdb variable .................... set $<var> = <exp>
-      Examine bytes around addres ......... x/<n>w <addr>
-      Print backtrace ..................... backtrace
-      Disassemble with code interspersed .. disassemble /mr <func>
+      Print all locals ............... info locals
+      Print first n elems array ...... print *<array>@<n>
+      Set gdb variable ............... set $<var> = <exp>
+      Examine bytes around addres .... x/<n>w <addr>
+      Print backtrace ................ backtrace
+      Disassemble with code .......... disassemble /mr <func>
 
       ## Breaking
-      Add breakpoint ...................... break <function>
-      Add file breakpoint ................. break <file>.c:<line>
-      Add conditional breakpoint .......... break <line> if <condition>
-      Delete all breakpoints .............. delete
+      Add breakpoint ................. break <function>
+      Add file breakpoint ............ break <file>.c:<line>
+      Add conditional breakpoint ..... break <line> if <condition>
+      Delete all breakpoints ......... delete
 
       ## Running the program
-      Run the next line ................... step
-      Step through the function ........... next
-      Run to next line .................... until
-      Run to next break point ............. continue
+      Run the next line .............. step
+      Step through the function ...... next
+      Run to next line ............... until
+      Run to next break point ........ continue
 
       ## Navigation
-      Go to line .......................... jump <line>
-      Exit frame .......................... return
-      Show location in stack .............. where
-      Show current frame .................. frame
+      Go to line ..................... jump <line>
+      Exit frame ..................... return
+      Show location in stack ......... where
+      Show current frame ............. frame
 

@@ -1,72 +1,72 @@
 
       ## Preprocess
-      Preprocess C code ................... cpp <file>
-      Run preprocessor .................... nasm -E <src>
-      Print include stack ................. echo | gcc -E -Wp,-v -
+      Preprocess C code .............. cpp <file>
+      Run preprocessor ............... nasm -E <src>
+      Print include stack ............ echo | gcc -E -Wp,-v -
 
       ## Compiling
-      Generate object file ................ nasm -felf64 <asm>
-      Generate executable ................. ld <obj>
-      Create an archive ................... ar -rcs <arch> <obj1> <obj2> [...]
-      Index an archive .................... ranlib <arch>
-      Compile to assembly ................. gcc -S <prog>
+      Generate object file ........... nasm -felf64 <asm>
+      Generate executable ............ ld <obj>
+      Create an archive .............. ar -rcs <arch> <obj1> <obj2> [...]
+      Index an archive ............... ranlib <arch>
+      Compile to assembly ............ gcc -S <prog>
 
       ## Disassembling
-      Print code as hex ................... hexdump -C <bin>
-      Print code as hex ................... readelf -x <section> <bin>
-      Disassemble to assembly ............. ndisasm -b32 <bin>
-      Disassemble all sections ............ objdump -D <bin>
-      Disassemble with intel format ....... objdump -d -M intel <bin>
-      Disassemble and include source ...... objdump -d -S -M intel <bin>
+      Print code as hex .............. hexdump -C <bin>
+      Print code as hex .............. readelf -x <section> <bin>
+      Disassemble to assembly ........ ndisasm -b32 <bin>
+      Disassemble all sections ....... objdump -D <bin>
+      Disassemble with intel format .. objdump -d -M intel <bin>
+      Disassemble and include source . objdump -d -S -M intel <bin>
 
       ## Headers
-      View ELF header ..................... readelf -h <bin>
-      View section headers ................ readelf -S <bin>
-      View program header table ........... readelf -l <bin>
+      View ELF header ................ readelf -h <bin>
+      View section headers ........... readelf -S <bin>
+      View program header table ...... readelf -l <bin>
 
       ## Symbol Tables
-      List symbol table ................... nm <bin>
-      List symbol table ................... objdump -t <bin>
-      List symbol table ................... readelf --symbols <bin>
-      List dynamic symbols ................ nm -D <bin>
-      List dynamic symbols ................ objdump -T <bin>
-      List dynamic symbols ................ readelf --dyn-syms <bin>
-      Print library containing symbol ..... nm -A <dir> | grep <sym>
-      List undefined symbols .............. nm -u <bin>
+      List symbol table .............. nm <bin>
+      List symbol table .............. objdump -t <bin>
+      List symbol table .............. readelf --symbols <bin>
+      List dynamic symbols ........... nm -D <bin>
+      List dynamic symbols ........... objdump -T <bin>
+      List dynamic symbols ........... readelf --dyn-syms <bin>
+      Print libraries having symbol .. nm -A <dir> | grep <sym>
+      List undefined symbols ......... nm -u <bin>
 
       ## Shared Libraries
-      List shared libraries ............... ldd <prog>
-      List shared libraries ............... objdump -p <bin> | grep NEEDED
-      List shared libraries ............... readelf -d <bin> | grep NEEDED
-      List dll loading .................... LD_DEBUG=libs <bin>
-      List libraries known to loader ...... ldconfig -p
-      Determine soname .................... readelf -d <lib> | grep SONAME
-      Print rpath of binary ............... objdump -p <bin> | grep PATH
-      Update ld cache ..................... ldconfig -v
-      Use cwd for run-time library path ... LD_LIBRARY_PATH=. <bin>
+      List shared libraries .......... ldd <prog>
+      List shared libraries .......... objdump -p <bin> | grep NEEDED
+      List shared libraries .......... readelf -d <bin> | grep NEEDED
+      List dll loading ............... LD_DEBUG=libs <bin>
+      List libraries known to loader . ldconfig -p
+      Determine soname ............... readelf -d <lib> | grep SONAME
+      Print rpath of binary .......... objdump -p <bin> | grep PATH
+      Update ld cache ................ ldconfig -v
+      Use cwd for library path ....... LD_LIBRARY_PATH=. <bin>
 
       ## Inspection
-      List objects in archive ............. ar -tv <arch>
-      View relocation table ............... readelf --relocs <obj>
-      Dissect object files ................ readelf -s <bin>
-      Show binary's dynamic section ....... readelf -d <bin>
-      Print version information ........... readelf -V <bin>
-      List size of sections ............... size <bin>
-      View memory mapping ................. cat /proc/<pid>/maps
+      List objects in archive ........ ar -tv <arch>
+      View relocation table .......... readelf --relocs <obj>
+      Dissect object files ........... readelf -s <bin>
+      Show bin's dynamic section ..... readelf -d <bin>
+      Print version information ...... readelf -V <bin>
+      List size of sections .......... size <bin>
+      View memory mapping ............ cat /proc/<pid>/maps
 
       ## Cleanup
-      Remove symbols ...................... strip <obj>
-      Extract object files from archive ... ar -x <obj>
+      Remove symbols ................. strip <obj>
+      Extract .o files from .a ....... ar -x <obj>
 
       ## Debugging
-      Check if binary was has debugging ... readelf --debug-dump=line <bin>
-      List LD_DEBUG help .................. LD_DEBUG=help cat
-      List coredumps ...................... coredumpctl list
-      Print details of coredump ........... coredumpctl info <match>
-      Examine coredump with GDB ........... coredumpctl gdb <match>
-      Run valgrind ........................ valgrind --leak-check=yes <bin>
+      Check if binary has debugging .. readelf --debug-dump=line <bin>
+      List LD_DEBUG help ............. LD_DEBUG=help cat
+      List coredumps ................. coredumpctl list
+      Print details of coredump ...... coredumpctl info <match>
+      Examine coredump with GDB ...... coredumpctl gdb <match>
+      Run valgrind ................... valgrind --leak-check=yes <bin>
 
       ## Misc C
-      List system error codes ............. errno -l
-      Go to GNU C library manual .......... info libc
+      List system error codes ........ errno -l
+      Go to GNU C library manual ..... info libc
 

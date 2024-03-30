@@ -1,19 +1,19 @@
 
       ## General
-      Dataset Search ...................... datasetsearch.research.google.com
-      Google Research Datasets ............ research.google.com/datasets
+      Dataset Search ................. datasetsearch.research.google.com
+      Google Research Datasets ....... research.google.com/datasets
 
       ## Events
-      Global events data .................. gdeltproject.org
-      Global events data .................. eventful.com
+      Global events data ............. gdeltproject.org
+      Global events data ............. eventful.com
 
       ## Trade
-      Global trade data ................... comtrade.un.org/data
+      Global trade data .............. comtrade.un.org/data
 
       ## For Image Recognition
-      CelebA .............................. mmlab.ie.cuhk.edu.hk/projects/CelebA.html
-      Fashion MNIST ....................... tf.keras.datasets.fashion_mnist
+      CelebA ......................... mmlab.ie.cuhk.edu.hk/projects/CelebA.html
+      Fashion MNIST .................. tf.keras.datasets.fashion_mnist
 
       ## Geo
-      Global heatmap ...................... strava.com/heatmap
+      Global heatmap ................. strava.com/heatmap
 

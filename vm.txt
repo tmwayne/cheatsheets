@@ -1,41 +1,41 @@
 
       ## Creation
-      Create VM ........................... virt-install <specs>
-      Clone VM ............................ virt-clone -o <orig> -n <name>
-      Get OS options ...................... osinfo-query os
-      Build packer in debug mode .......... packer build -on-error=ask <file>
+      Create VM ...................... virt-install <specs>
+      Clone VM ....................... virt-clone -o <orig> -n <name>
+      Get OS options ................. osinfo-query os
+      Build packer in debug mode ..... packer build -on-error=ask <file>
       
       ## Interaction
-      List VMs ............................ virsh list --all
-      Edit VM ............................. virsh edit <vm>
-      Reboot VM ........................... virsh reboot <vm>
-      Shutdown VM ......................... virsh shutdown <vm>
-      Remove VM ........................... virsh undefine <vm>
-      Connect to running session .......... virt-viewer <vm>
-      Rename VM ........................... virsh domrename <old> <new>
+      List VMs ....................... virsh list --all
+      Edit VM ........................ virsh edit <vm>
+      Reboot VM ...................... virsh reboot <vm>
+      Shutdown VM .................... virsh shutdown <vm>
+      Remove VM ...................... virsh undefine <vm>
+      Connect to running session ..... virt-viewer <vm>
+      Rename VM ...................... virsh domrename <old> <new>
 
       ## Inspection
-      Get IP address for VM ............... virsh domifaddr <vm>
-      Connec to VM with VNC or Spice ...... remote-viewer <uri>
-      List all images ..................... machinectl list
+      Get IP address for VM .......... virsh domifaddr <vm>
+      Connec to VM with VNC or Spice . remote-viewer <uri>
+      List all images ................ machinectl list
 
       ## Network
-      Create network interface ............ virsh net-define <net>
-      Start network interface ............. virsh net-start <net>
-      List DHCP leases for interface ...... virsh net-dhcp-leases <net>
-      List interfaces ..................... virsh net-list
-      Edit XML of interface ............... virsh net-edit <net>
+      Create network interface ....... virsh net-define <net>
+      Start network interface ........ virsh net-start <net>
+      List DHCP leases for interface . virsh net-dhcp-leases <net>
+      List interfaces ................ virsh net-list
+      Edit XML of interface .......... virsh net-edit <net>
 
       ## Vagrant
-      Add box ............................. vagrant box add --name <box> <path>
-      Initialize new box .................. vagrant init <box>
+      Add box ........................ vagrant box add --name <box> <path>
+      Initialize new box ............. vagrant init <box>
 
       ## Libvirt
-      Load nbd kernel module .............. modprobe nbd max_part=8
-      Mount qcow2 img as network block .... qemu-nbd --connect=/dev/nbd0 <img>
-      Unmount qcow2 as network block dev .. qemu-nbd --disconnect /dev/nbd0
+      Load nbd kernel module ......... modprobe nbd max_part=8
+      Mount qcow2 img as ntw block ... qemu-nbd --connect=/dev/nbd0 <img>
+      Unmount qcow2 as ntw block dev . qemu-nbd --disconnect /dev/nbd0
 
       ## LXD
-      Launch privileged container ......... lxc launch <img> <cnt> 
-      .....................................     -c security.privileged=true
+      Launch privileged container .... lxc launch <img> <cnt> 
+      ................................ -c security.privileged=true
 

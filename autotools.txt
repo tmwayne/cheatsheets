@@ -1,6 +1,6 @@
 
       ## Generate files
-      Create preliminary configure.ac ..... autoscan <srcdir>
-      Populate necessary files ............ autoreconf -i
+      Create prelim configure.ac ..... autoscan <srcdir>
+      Populate necessary files ....... autoreconf -i
 
 
