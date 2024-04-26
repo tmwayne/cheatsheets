@@ -84,6 +84,7 @@ edit() {
     echo $USAGE
     exit 1
   fi
+  mkdir -p $(dirname $cs)
   $EDITOR $cs
 }
 
