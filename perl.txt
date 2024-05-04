@@ -12,3 +12,6 @@
       Fields of split input .......... @F
       Environment variables .......... %ENV
 
+      ## Misc
+      Convert find cmd to perl ....... find2perl <args>
+
