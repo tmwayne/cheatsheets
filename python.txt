@@ -9,6 +9,9 @@
       Initial sphinx build ........... phinx-quickstart docs
       Build documentation ............ make html
 
+      ## Static Analysis
+      Run type checking .............. mypy .
+
       ## Testing
       Run pdb upon failure ........... pytest --pdb
       Rerun just the failing tests ... pytest --last-failed

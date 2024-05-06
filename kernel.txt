@@ -1,0 +1,8 @@
+
+      ## Kernel Setup
+      Kernel git repo ................ git://git.kernel.org/pub/scm/linux/
+      ................................   kernel/git/stable/linux-stableo
+      Configure kernel ............... make menuconfig
+      Use default configs ............ make defconfig
+      Validate and update configs .... make oldconfig
+

@@ -1,4 +1,5 @@
 
       ## Inspect
       Show data in fixed col layout .. column --table -s<sep>
+      Decompress and print data ...... zcat <file>
 
