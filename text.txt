@@ -1,5 +1,0 @@
-
-      ## Text Manipulation
-      Substitute a character ......... tr -d <from> <to>
-      Concatenate lines .............. paste -d <delim>
-
