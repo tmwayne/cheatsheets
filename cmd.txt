@@ -1,8 +1,0 @@
-
-      ## Text Manipulation
-      Substitute a character ......... tr -d <from> <to>
-      Concatenate lines .............. paste -d <delim>
-
-      ## Search
-      Run command on select files .... find [...] -exec <cmd> {} +
-
