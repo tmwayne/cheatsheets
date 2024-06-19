@@ -44,7 +44,8 @@
       Print control groups ........... systemd-cgls
       List resource usage by cgroup .. systemd-cgtop
       Retrieve or modify rlimits ..... prlimit --pid <pid>
-      Send a signal to process command .... killall <cmd>
+      Send a signal to process cmd ... killall <cmd>
+      Generate core dump of process .. gcore <pid>
 
       ## Inspect
       Show command definition ........ type <cmd>
