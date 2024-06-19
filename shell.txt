@@ -16,6 +16,7 @@
       ## Misc
       Permute input lines ............ shuf
       Generate random number ......... echo $RANDOM
+      Get strings from binary file ... strings <file>
 
       ## Text Manipulation
       Substitute a character ......... tr -d <from> <to>
