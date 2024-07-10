@@ -15,9 +15,12 @@
       Show packages using USE flag ... equery hasuse <flag>
       Display package info ........... epkginfo <pkg>
       List installed packages ........ qlist -IRv
-      Read installation messages ..... eread
-      Verify installed package ....... qcheck <pkg>
       List portage applets ........... q
+      Verify installed package ....... qcheck <pkg>
+      Read installation messages ..... eread
+      List news ...................... eselect news list
+      Read news item ................. eselect news read <item>
+      Delete news .................... eselect news purge
 
       ## Config Modfication
       Enable USE flag ................ euse -E <flag>
