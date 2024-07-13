@@ -1,0 +1,5 @@
+
+      ## Audio
+      Adjust audio settings .......... alsamixer
+      Save settings .................. alsactl store
+

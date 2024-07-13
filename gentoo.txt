@@ -35,3 +35,9 @@
       Check status of service ........ rc-service <svc> status
       List status of all services .... rc-status --all
 
+      ## Firmware
+      List detected/supported dev .... fwupdmgr get-devices
+      Refresh metadata ............... fwupdmgr refresh
+      Check available updates ........ fwupdmgr get-updates
+      Install updates ................ fwupdmgr update
+
