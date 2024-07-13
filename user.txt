@@ -2,4 +2,6 @@
       ## General
       List last logins ............... last
       Show logged in activity ........ w
+      Show logged in users ........... loginctl show-users
+      Show login configs ............. loginctl show-session
 
