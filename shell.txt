@@ -25,3 +25,6 @@
       ## Search
       Run command on select files .... find [...] -exec <cmd> {} +
 
+      ## Display
+      Set font from file ............. setfont <file>
+
