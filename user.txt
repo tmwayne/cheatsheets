@@ -5,3 +5,8 @@
       Show logged in users ........... loginctl show-users
       Show login configs ............. loginctl show-session
 
+      ## Power management
+      Hibernate ...................... loginctl hibernate
+      Suspend session ................ loginctl suspend
+      Hibernate if no activity ....... loginctl suspend-then-hibernate
+

@@ -3,3 +3,8 @@
       Adjust audio settings .......... alsamixer
       Save settings .................. alsactl store
 
+      ## Keyboard
+      Examine keycode sent by key .... showkey --ascii
+      Print keycode mapping .......... dumpkeys -l
+      Print contents of X events ..... xev -event keyboard
+

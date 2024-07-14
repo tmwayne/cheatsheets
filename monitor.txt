@@ -15,6 +15,7 @@
       Show memory use ................ free -h
       Show disk availability ......... df -h
       Show file size ................. du -sh
+      Show processes using msg bus ... busctl list
 
       ## Resource monitoring
       Open top for control groups .... systemd-cgtop

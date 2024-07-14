@@ -41,3 +41,6 @@
       Check available updates ........ fwupdmgr get-updates
       Install updates ................ fwupdmgr update
 
+      ## Kernel
+      Get kernel versions ............ eselect kernel list
+
