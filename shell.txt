@@ -17,6 +17,7 @@
       Permute input lines ............ shuf
       Generate random number ......... echo $RANDOM
       Get strings from binary file ... strings <file>
+      Copy to xclip .................. <cmd> | xclip -sel clip
 
       ## Text Manipulation
       Substitute a character ......... tr -d <from> <to>

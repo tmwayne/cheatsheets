@@ -11,8 +11,8 @@
       Reboot VM ...................... virsh reboot <vm>
       Shutdown VM .................... virsh shutdown <vm>
       Remove VM ...................... virsh undefine <vm>
-      Connect to running session ..... virt-viewer <vm>
       Rename VM ...................... virsh domrename <old> <new>
+      Connect to running session ..... virt-viewer --attach <vm>
 
       ## Inspection
       Get IP address for VM .......... virsh domifaddr <vm>
