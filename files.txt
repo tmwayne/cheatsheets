@@ -10,4 +10,5 @@
       ## Misc
       Pacman lock .................... /var/lib/pacman/db.lck
       Libvirt images ................. /var/lib/libvirt/images
+      Syslog messages ................ /var/log/messages
 
