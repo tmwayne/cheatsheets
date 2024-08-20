@@ -22,12 +22,15 @@
       ## Interface management
       View visible interfaces ........ ip addr show
       Show NIC info .................. ifconfig (also ip link)
+      Inspect DNS resolver ........... resolvectl
+
+      ## Wifi
+      Check WPA status ............... wpa_cli status
+      Make encrypted network config .. wpa_passphrase <ssid> <psk>
       List available wifi networks ... nmcli device wifi list
       Info for wireless connctionss .. iw dev <int> link
       Check if wifi is blocked ....... rfkill list
       Unblock wifi interface ......... rfkill unblock wifi
-      Check WPA status ............... wpa_cli status
-      Inspect DNS resolver ........... resolvectl
 
       ## Remote connections
       Create new key ................. ssh-keygen -b 2048 -t rsa

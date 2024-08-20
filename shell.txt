@@ -8,6 +8,7 @@
       View terminal attributes ....... stty
       Reset terminal attributes ...... stty sane
       Print name of terminal ......... tty
+      Print system triplet ........... gcc -dumpmachine
 
       ## Time and Locales
       List locale environment ........ locale
@@ -18,6 +19,7 @@
       Generate random number ......... echo $RANDOM
       Get strings from binary file ... strings <file>
       Copy to xclip .................. <cmd> | xclip -sel clip
+      Enter message to syslog ........ logger <msg>
 
       ## Text Manipulation
       Substitute a character ......... tr -d <from> <to>

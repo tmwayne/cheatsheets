@@ -15,6 +15,8 @@
       Resize partition ............... parted <dev> -- resizepart <num> <end>
 
       ## File systems
+      List filesystems in tree view .. findmnt
+      Check if mount exists .......... mountpoint <mnt>
       List all filesystems ........... lsblk --fs
       Mount a filesystem ............. mount -t <type> <dev> <mountpoint>
       Print mounted filesystems ...... mount
