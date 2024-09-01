@@ -13,6 +13,7 @@
       ## Time and Locales
       List locale environment ........ locale
       Print system time .............. timedatectl
+      Convert date to unix time ...... date "+%s" -d "<date>"
 
       ## Misc
       Permute input lines ............ shuf
