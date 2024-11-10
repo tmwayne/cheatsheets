@@ -17,6 +17,8 @@
       Search perldoc for variable .... perldoc -v <var>
       Get help for regex's ........... man perlre
       Regex quick start .............. man perlrequick
+      Get help on references ......... man perlreftut
 
       ## Misc
       Convert find cmd to perl ....... find2perl <args>
+
