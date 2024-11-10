@@ -29,3 +29,7 @@
       Repeat last command with sub ... ^str1^str2
       Cmdline typed so far ........... !#
 
+      ## Conditional Constructs
+      Test if arith expr is non-zero . (( <...> ))
+      Test var against regex ......... [[ $var =~ <regex> ]]
+
