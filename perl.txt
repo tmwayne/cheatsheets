@@ -15,4 +15,5 @@
       ## Misc
       Convert find cmd to perl ....... find2perl <args>
       Search perldoc for function .... perldoc -f <func>
+      Search perldoc for variable .... perldoc -v <var>
 
