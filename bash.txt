@@ -1,0 +1,31 @@
+
+      ## Shell Parameter Expansion
+      Sub var if null ................ ${str:-sub}
+      Sub var if not null ............ ${str:+sub}
+      Assign to var if null .......... ${str:=sub}
+      Sub var to stderr if null ...... ${str:?sub}
+      Expand substring ............... ${str:offset:len}
+      Expand subarray by length ...... ${array[@]:offset:len}
+      List vars starting with prefix . ${!prefix*}
+      List array indices ............. ${!prefix[*]}
+      Print length of var ............ ${#var}
+      Remove pattern: start/shortest . ${str#pattern}
+      Remove pattern: start/longest .. ${str##pattern}
+      Remove pattern: end/shortest ... ${str%pattern}
+      Remove pattern: end/longest .... ${str%%pattern}
+
+      ## Redirection
+      Redirect stdout/stderr ......... > word 2>&1
+      Redirect stdout/stderr ......... &> word
+      Redirect/append stdout/stderr .. >> word 2>&1
+      Redirect/append stdout/stderr .. &>> word
+      
+      ## Event Designators
+      Refer to cmd line n ............ !n
+      Refer to cmd n lines back ...... !-n
+      Refer to previous cmd .......... !!
+      Refer to cmd starting with str . !str
+      Refer to cmd containing str .... !?str[?]
+      Repeat last command with sub ... ^str1^str2
+      Cmdline typed so far ........... !#
+
