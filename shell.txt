@@ -29,6 +29,7 @@
       ## File Navigation
       Run command on select files .... find [...] -exec <cmd> {} +
       Preview files with fzf ......... fzf --preview 'bat --color=always {}'
+      Show tree of grep matches ...... rg -l <exp> | tree --fromfile
 
       ## Display
       Set font from file ............. setfont <file>
