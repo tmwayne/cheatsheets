@@ -6,3 +6,6 @@
       Use default configs ............ make defconfig
       Validate and update configs .... make oldconfig
 
+      ## Boot settings
+      Regenerate kernel+initramfs .... dracut --regenerate-all --force
+

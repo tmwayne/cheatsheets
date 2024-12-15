@@ -1,4 +1,0 @@
-
-      ## Boot settings
-      Regenerate kernel+initramfs .... dracut --regenerate-all --force
-
