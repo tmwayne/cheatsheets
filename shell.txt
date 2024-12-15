@@ -22,14 +22,9 @@
       Copy to xclip .................. <cmd> | xclip -sel clip
       Enter message to syslog ........ logger <msg>
 
-      ## Text Manipulation
-      Substitute a character ......... tr -d <from> <to>
-      Concatenate lines .............. paste -d <delim>
-
       ## File Navigation
       Run command on select files .... find [...] -exec <cmd> {} +
       Preview files with fzf ......... fzf --preview 'bat --color=always {}'
-      Show tree of grep matches ...... rg -l <exp> | tree --fromfile
 
       ## Display
       Set font from file ............. setfont <file>

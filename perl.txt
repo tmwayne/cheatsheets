@@ -2,23 +2,47 @@
       ## Special variables
       Default variable ............... $_
       Line number of read line ....... $.
-      Handle of current file ......... ARGV
-      Arguments passed ot perl ....... @ARGV
       Input record separator ......... $/
       After print append ............. $\
-      Match from pattern match ....... $1, $2, ...
-      Outfield field separator ....... $,
+      Output field separator ......... $,
       Array value separator .......... $"
+      Arguments passed to perl ....... @ARGV
+      Handle of current file ......... ARGV
       Fields of split input .......... @F
       Environment variables .......... %ENV
+      Match from pattern match ....... $1, $2, ...
+      Contents of last match ......... $&
+
+      ## Character classes & more
+      Word ........................... \w
+      Non-word ....................... \W
+      Whitespace ..................... \s
+      Non-whitespace ................. \S
+      Digit .......................... \d
+      Non-digit ...................... \D
+      Word boundary .................. \b
+      Literal characters ............. \Q<...>\E
+
+      ## Modifiers
+      Ignore case .................... i
+      Expanded mode .................. x
+      Single line mode ............... s
+      Multiline mode ................. m
+      Global ......................... g
+      Evaluate ....................... e
 
       ## Help
       Search perldoc for function .... perldoc -f <func>
       Search perldoc for variable .... perldoc -v <var>
-      Get help for regex's ........... man perlre
+      Introduction ................... man perlintro
       Regex quick start .............. man perlrequick
-      Get help on references ......... man perlreftut
+      Tutorial on regexes ............ man perlretut
+      Get help for regexes ........... man perlre
+      Reference on regexes ........... man perlreref
+      FAQ for regexes ................ man perlfaq6
+      Tutorial on references ......... man perlreftut
 
       ## Misc
       Convert find cmd to perl ....... find2perl <args>
+      Get path for module ............ perldoc -lm <mod>
 

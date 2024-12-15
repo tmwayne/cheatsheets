@@ -1,0 +1,14 @@
+
+      ## Search
+      Show tree of grep matches ...... rg -l <exp> | tree --fromfile
+
+      ## Extraction
+      Print lines from n to m ........ sed -n 'n,m p' <file>
+      Print lines from n to end ...... sed -n 'n,$ p' <file>
+
+      ## Substitution
+      Substitute a character ......... tr -d <from> <to>
+
+      ## Others
+      Concatenate lines .............. paste -d <delim>
+
