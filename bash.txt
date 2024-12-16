@@ -29,7 +29,29 @@
       Repeat last command with sub ... ^str1^str2
       Cmdline typed so far ........... !#
 
+      ## Word Designators
+      The 0th word, usually the cmd .. :0
+      The nth word ................... :n
+      The 1st argument (word 1) ...... :^
+      The last argument .............. :$
+      Range of words ................. :x-y
+      All words except the 0th ....... :*
+      Words from x to the end ........ :x*
+
+      ## Modifiers
+      Remove trailing pathname ....... :h
+      Remove leading pathname ........ :t
+      Remove trailing suffix ......... :r
+      Remove all but trailing suffix . :e
+      Print but do not execute ....... :p
+
       ## Conditional Constructs
       Test if arith expr is non-zero . (( <...> ))
       Test var against regex ......... [[ $var =~ <regex> ]]
+
+      ## Debug
+      Run script in debug mode ....... bash -x <script>
+
+      ## Other
+      Use original command ........... \<cmd>
 
