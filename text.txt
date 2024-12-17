@@ -9,6 +9,11 @@
       ## Substitution
       Substitute a character ......... tr -d <from> <to>
 
+      ## Formatting
+      Show data in fixed col layout .. column --table -s<sep>
+
       ## Others
       Concatenate lines .............. paste -d <delim>
+      Number lines ................... nl <file>
+      ASCII character numbers ........ man ascii
 

@@ -12,6 +12,7 @@
       Environment variables .......... %ENV
       Match from pattern match ....... $1, $2, ...
       Contents of last match ......... $&
+      Extension for file backup ...... $^I
 
       ## Character classes & more
       Word ........................... \w
@@ -21,7 +22,15 @@
       Digit .......................... \d
       Non-digit ...................... \D
       Word boundary .................. \b
-      Literal characters ............. \Q<...>\E
+      Control character .............. \NNN
+
+      ## String Modifiers
+      Literal characters ............. \Q
+      Uppercase all .................. \U
+      Uppercase next ................. \u
+      Lowercase all .................. \L
+      Lowercase next ................. \l
+      End case conversion ............ \E
 
       ## Modifiers
       Ignore case .................... i
@@ -45,4 +54,5 @@
       ## Misc
       Convert find cmd to perl ....... find2perl <args>
       Get path for module ............ perldoc -lm <mod>
+      Backup using seconds suffix .... perl -i.$SECONDS [...]
 
