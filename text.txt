@@ -16,4 +16,5 @@
       Concatenate lines .............. paste -d <delim>
       Number lines ................... nl <file>
       ASCII character numbers ........ man ascii
+      Basic awk ...................... awk '/<RE>/ { <action> }' <file>
 
