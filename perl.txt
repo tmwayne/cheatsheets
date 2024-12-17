@@ -12,6 +12,8 @@
       Environment variables .......... %ENV
       Match from pattern match ....... $1, $2, ...
       Contents of last match ......... $&
+      Record portion before match .... $`
+      Record portion after match ..... $'
       Extension for file backup ...... $^I
 
       ## Character classes & more
