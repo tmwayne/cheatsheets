@@ -5,9 +5,7 @@
       Assign to var if null .......... ${str:=sub}
       Sub var to stderr if null ...... ${str:?sub}
       Expand substring ............... ${str:offset:len}
-      Expand subarray by length ...... ${array[@]:offset:len}
       List vars starting with prefix . ${!prefix*}
-      List array indices ............. ${!prefix[*]}
       Print length of var ............ ${#var}
       Remove pattern: start/shortest . ${str#pattern}
       Remove pattern: start/longest .. ${str##pattern}
@@ -19,6 +17,16 @@
       Redirect stdout/stderr ......... &> word
       Redirect/append stdout/stderr .. >> word 2>&1
       Redirect/append stdout/stderr .. &>> word
+
+      ## Special Parameters
+      IFS separated pos. params ...... $*
+      Space separated pos. params .... $@
+      Number of pos. params .......... $#
+      Exit status of last process .... $?
+      Current option flags ........... $-
+      Pid of shell ................... $$
+      Pid of most recent bg job ...... $!
+      Name of shell or script ........ $0
       
       ## Event Designators
       Refer to cmd line n ............ !n
@@ -48,6 +56,15 @@
       ## Conditional Constructs
       Test if arith expr is non-zero . (( <...> ))
       Test var against regex ......... [[ $var =~ <regex> ]]
+
+      ## Arrays
+      Assign array ................... arr=(<vals>)
+      Expand array ................... ${arr[@]}
+      Get last element ............... ${arr[-1]}
+      Expand length of array ......... ${#arr[@]}
+      Expand subarray by length ...... ${arr[@]:offset:len}
+      List array indices ............. ${!arr[*]}
+      Delete array element ........... unset arr[ind]
 
       ## Debug
       Run script in debug mode ....... bash -x <script>

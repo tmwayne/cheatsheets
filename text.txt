@@ -3,18 +3,23 @@
       Show tree of grep matches ...... rg -l <exp> | tree --fromfile
 
       ## Extraction
-      Print lines from n to m ........ sed -n 'n,m p' <file>
-      Print lines from n to end ...... sed -n 'n,$ p' <file>
+      Print range by line # .......... sed -n 'n,m p'
+      Print range from line # to end . sed -n 'n,$ p'
+      Print range between patterns ... awk '/RE/, /RE/'
+      Print range between patterns ... sed -n '/RE/,/RE/ p'
 
       ## Substitution
       Substitute a character ......... tr -d <from> <to>
 
+      ## Manipulation
+      Run action for matches ......... awk '/RE/ { action }'
+
       ## Formatting
       Show data in fixed col layout .. column --table -s<sep>
+      Expand tabs to spaces .......... expand
 
       ## Others
       Concatenate lines .............. paste -d <delim>
       Number lines ................... nl <file>
       ASCII character numbers ........ man ascii
-      Basic awk ...................... awk '/<RE>/ { <action> }' <file>
 

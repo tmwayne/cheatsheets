@@ -25,6 +25,7 @@
       Non-digit ...................... \D
       Word boundary .................. \b
       Control character .............. \NNN
+      Single quote (ctrl char) ....... \047
 
       ## String Modifiers
       Literal characters ............. \Q
@@ -52,9 +53,14 @@
       Reference on regexes ........... man perlreref
       FAQ for regexes ................ man perlfaq6
       Tutorial on references ......... man perlreftut
+      Help on perldoc ................ man perldoc
+      Help on operators .............. man perlop
+      List of perl functions ......... man perlfunc
 
       ## Misc
       Convert find cmd to perl ....... find2perl <args>
       Get path for module ............ perldoc -lm <mod>
       Backup using seconds suffix .... perl -i.$SECONDS [...]
+      Print range .................... perl -ne '/RE1/../RE2/ and print'
+      Print range (min 2 lines) ...... perl -ne '/RE1/.../RE2/ and print'
 
