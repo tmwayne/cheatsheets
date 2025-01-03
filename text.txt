@@ -9,7 +9,7 @@
       Print range between patterns ... sed -n '/RE/,/RE/ p'
 
       ## Substitution
-      Substitute a character ......... tr -d <from> <to>
+      Substitute a character ......... tr <from> <to>
 
       ## Manipulation
       Run action for matches ......... awk '/RE/ { action }'

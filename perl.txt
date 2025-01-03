@@ -44,18 +44,9 @@
       Evaluate ....................... e
 
       ## Help
+      List perl help guides .......... man perl
       Search perldoc for function .... perldoc -f <func>
       Search perldoc for variable .... perldoc -v <var>
-      Introduction ................... man perlintro
-      Regex quick start .............. man perlrequick
-      Tutorial on regexes ............ man perlretut
-      Get help for regexes ........... man perlre
-      Reference on regexes ........... man perlreref
-      FAQ for regexes ................ man perlfaq6
-      Tutorial on references ......... man perlreftut
-      Help on perldoc ................ man perldoc
-      Help on operators .............. man perlop
-      List of perl functions ......... man perlfunc
 
       ## Misc
       Convert find cmd to perl ....... find2perl <args>
