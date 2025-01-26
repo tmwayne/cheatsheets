@@ -1,5 +1,0 @@
-
-      ## Compression
-      Create tarball ................. tar -czvf <tar> <files>
-      Decompress and print data ...... zcat <file>
-
