@@ -17,6 +17,10 @@
       ## Formatting
       Show data in fixed col layout .. column --table -s<sep>
       Expand tabs to spaces .......... expand
+      Format strint and save to var .. printf -v <var> <str>
+      Format as shell quoted string .. printf %q <str>
+      Print current date ............. printf '%(<fmt>)T' -1
+      Convert epoch to date .......... printf '%(%F)T' <epoch>
 
       ## Others
       Concatenate lines .............. paste -d <delim>

@@ -7,10 +7,23 @@
       Expand substring ............... ${str:offset:len}
       List vars starting with prefix . ${!prefix*}
       Print length of var ............ ${#var}
+      Use a shell quotes string ...... $'<str>'
+
+      ## String Removal
       Remove pattern: start/shortest . ${str#pattern}
       Remove pattern: start/longest .. ${str##pattern}
       Remove pattern: end/shortest ... ${str%pattern}
       Remove pattern: end/longest .... ${str%%pattern}
+
+      ## String Replacement
+      Replace first match ............ ${str/old/new}
+      Replace all matches ............ ${str//old/new}
+      Replace if old matches front ... ${str/#old/new}
+      Replace if old matches back .... ${str/%old/new}
+      Lowercase first match .......... ${str,pattern}
+      Lowercase all matches .......... ${str,,pattern}
+      Uppercase first match .......... ${str^pattern}
+      Uppercase all matches .......... ${str^^pattern}
 
       ## Redirection
       Redirect stdout/stderr ......... > word 2>&1
@@ -54,22 +67,35 @@
       Print but do not execute ....... :p
 
       ## Conditional Constructs
-      Test if arith expr is non-zero . (( <...> ))
+      Test if arith expr is non-zero . (( <expr> ))
+      Expand to value of arith expr .. $(( <expr> ))
       Test var against regex ......... [[ $var =~ <regex> ]]
 
       ## Arrays
       Assign array ................... arr=(<vals>)
+      Push value onto array .......... arr+=(val)
       Expand array ................... ${arr[@]}
+      Expand array as single word .... "${arr[*]}"
       Get last element ............... ${arr[-1]}
       Expand length of array ......... ${#arr[@]}
       Expand subarray by length ...... ${arr[@]:offset:len}
-      List array indices ............. ${!arr[*]}
+      List array indices ............. ${!arr[@]}
       Delete array element ........... unset arr[ind]
+      Generate sequence .............. {start..end}
+      Generate padded sequence ....... {0start..end}
 
       ## Debug
       Run script in debug mode ....... bash -x <script>
+      Check script syntax ............ bash -n <script>
+      Write to syslog ................ logger -t "${0##*/}[$$]" <msg>
 
       ## Other
       Use original command ........... \<cmd>
       Null command ................... :
+      Get help on builtin ............ help <cmd>
+      Print type of NAME ............. type -t <name>
+      Declare readonly variable ...... readonly <var>
+      Set signal handler ............. trap <cmd> <signal>
+      Read file by line .............. while read ln; do <cmd>; done < <file>
+      Read lines into array .......... mapfile -t <array> < <file>
 
