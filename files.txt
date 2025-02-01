@@ -7,31 +7,23 @@
       Print umask .................... umask
       Set default ACL ................ setfacl -d -m <acl> <dir>
 
-      ## Misc locations
-      Libvirt images ................. /var/lib/libvirt/images
-      POSIX shared memory ............ /dev/shm
-
       ## System Information
       Process specific info .......... /proc/<pid>/status
-      Network info ................... /proc/net
-      File System info ............... /proc/sys/fs
-      Kernel settings ................ /proc/sys/kernel
-      Networking and socket settings . /proc/sys/net
-      Memory-management settings ..... /proc/sys/vm
-
-      ## Limits
-      Inotify limits ................. /proc/sys/fs/inotify
-
-      ## System information
-      Partitions with device IDs ..... /proc/partition
-      Swap information ............... /proc/swaps
-      Supported filesystems .......... /proc/filesystems
       Set process resource limits .... /proc/<pid>/limits
-      Get process resource status .... /proc/<pid>/status
+      Kernel settings ................ /proc/sys/kernel
+      File System info ............... /proc/sys/fs
+      Inotify limits ................. /proc/sys/fs/inotify
+      Memory-management settings ..... /proc/sys/vm
+      Networking and socket settings . /proc/sys/net
+      Network info ................... /proc/net
+      Partitions with device IDs ..... /proc/partition
+      Supported filesystems .......... /proc/filesystems
+      Swap information ............... /proc/swaps
       View current set of locks ...... /proc/locks
       
       ## Misc
-      Pacman lock .................... /var/lib/pacman/db.lck
       Libvirt images ................. /var/lib/libvirt/images
+      Pacman lock .................... /var/lib/pacman/db.lck
       Syslog messages ................ /var/log/messages
+      POSIX shared memory ............ /dev/shm
 

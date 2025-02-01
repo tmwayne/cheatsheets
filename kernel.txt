@@ -1,11 +1,15 @@
 
-      ## Kernel Setup
+      ## Repo
       Kernel git repo ................ git://git.kernel.org/pub/scm/linux/
-      ................................   kernel/git/stable/linux-stableo
+      ................................   kernel/git/stable/linux-stable.git
+
+      ## Configuration
       Configure kernel ............... make menuconfig
       Use default configs ............ make defconfig
       Validate and update configs .... make oldconfig
 
-      ## Boot settings
+      ## Installation
+      Install modules ................ make modules_install
+      Install kernel ................. make install
       Regenerate kernel+initramfs .... dracut --regenerate-all --force
 
