@@ -1,8 +1,4 @@
 
-      ## Kernel
-      List loaded modules ............ lsmod
-      Print info about module ........ modinfo
-
       ## Information
       Get device info ................ udevadm info --query=all --name=<dev>
       Watch device changes ........... udevadm monitor <args>

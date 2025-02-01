@@ -13,3 +13,7 @@
       Install kernel ................. make install
       Regenerate kernel+initramfs .... dracut --regenerate-all --force
 
+      ## Modules
+      List loaded modules ............ lsmod
+      Print info about module ........ modinfo
+
