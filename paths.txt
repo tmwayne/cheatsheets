@@ -4,8 +4,6 @@
       Man page for important dirs .... man 7 hier
       Man page for /proc ............. man 5 proc
       Print system paths ............. systemd-path
-      Print umask .................... umask
-      Set default ACL ................ setfacl -d -m <acl> <dir>
 
       ## System Information
       Process specific info .......... /proc/<pid>/status
