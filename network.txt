@@ -3,11 +3,11 @@
       Capture transferred packets .... tcpdump -i <int> -f <file>
       Read tcpdump file (ASCII) ...... tcpdump -A -# -r <file>
       Read tcpdump file (ASCII+hex) .. tcpdump -XX -# -r <file>
-      Show the IP routing table ...... route
       Lookup IP for DNS name ......... nslookup <DNS name>
+      Scan network for hosts ......... nmap -sn <network>
+      Show the IP routing table ...... route
       Print packet path to host ...... traceroute [depr]
       Print packet path to host ...... tracepath
-      Scan network for hosts ......... nmap -sn <network>
 
       ## Port management
       IPv4 ports ..................... lsof -Pnl +m -i4
@@ -21,7 +21,8 @@
 
       ## Interface management
       View visible interfaces ........ ip addr show
-      Show NIC info .................. ifconfig (also ip link)
+      Show NIC info .................. ifconfig 
+      Show NIC info .................. ip link
       Inspect DNS resolver ........... resolvectl
 
       ## Wifi
