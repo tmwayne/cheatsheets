@@ -10,6 +10,9 @@
       Print distro information ....... lsb_release -a
       Show available IPC facilities .. lsipc
       Show IPC subsystem activity .... ipcs
+      Get CPU specs .................. lscpu
+      Get device info ................ udevadm info --query=all --name=<dev>
+      Watch device changes ........... udevadm monitor <args>
 
       ## Resource information
       Show memory use ................ free -h

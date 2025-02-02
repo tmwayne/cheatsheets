@@ -8,3 +8,7 @@
       Print keycode mapping .......... dumpkeys -l
       Print contents of X events ..... xev -event keyboard
 
+      ## Printing
+      List printers .................. lpstat -d
+      Print file ..................... lp <file>
+

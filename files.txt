@@ -1,9 +1,4 @@
 
-      ## Information
-      Get device info ................ udevadm info --query=all --name=<dev>
-      Watch device changes ........... udevadm monitor <args>
-      Get CPU specs .................. lscpu
-
       ## Partitions
       List partitions ................ fdisk --list
       List partitions ................ parted -l
@@ -37,8 +32,4 @@
       Locate binary, source, man pages .... whereis <cmd>
       Populate file with zeros ....... dd if=/dev/zero of=<file> bs=1 count=<size>
       Dump file in various formats ... od <file>
-
-      ## Printing
-      List printers .................. lpstat -d
-      Print file ..................... lp <file>
 
