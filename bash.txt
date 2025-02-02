@@ -30,6 +30,7 @@
       Redirect stdout/stderr ......... &> word
       Redirect/append stdout/stderr .. >> word 2>&1
       Redirect/append stdout/stderr .. &>> word
+      Pipe stdout and stderr ......... |& cmd
 
       ## Special Parameters
       IFS separated pos. params ...... $*
