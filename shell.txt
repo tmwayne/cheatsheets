@@ -21,6 +21,8 @@
       Get strings from binary file ... strings <file>
       Copy to xclip .................. <cmd> | xclip -sel clip
       Enter message to syslog ........ logger <msg>
+      Log terminal session ........... script <file>
+      Sudo without switching homes ... sudo -E <cmd>
 
       ## File Navigation
       Run command on select files .... find [...] -exec <cmd> {} +
@@ -28,4 +30,7 @@
 
       ## Display
       Set font from file ............. setfont <file>
+
+      ## Inspect
+      Show command definition ........ type <cmd>
 

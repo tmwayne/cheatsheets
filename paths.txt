@@ -13,11 +13,15 @@
       Inotify limits ................. /proc/sys/fs/inotify
       Memory-management settings ..... /proc/sys/vm
       Networking and socket settings . /proc/sys/net
-      Network info ................... /proc/net
       Partitions with device IDs ..... /proc/partition
       Supported filesystems .......... /proc/filesystems
+      Network info ................... /proc/net
       Swap information ............... /proc/swaps
       View current set of locks ...... /proc/locks
+      CPU info ....................... /proc/cpuinfo
+      Memory info .................... /proc/meminfo
+      Disk stats ..................... /proc/diskstats
+      Devices ........................ /proc/devices
       
       ## Misc
       Libvirt images ................. /var/lib/libvirt/images

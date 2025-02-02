@@ -1,0 +1,29 @@
+
+      ## Overview
+      List running jobs .............. ps -auxf
+      List process tree .............. pstree
+      Get PID of process by name ..... pgrep <process>
+
+      ## Monitoring & Information
+      Print info about process ....... prtstat
+      Print process accounting info .. lastcomm
+      Monitor a specific process ..... pidstat
+      List the files processes use ... lsof -p <prog>
+      Show processes using msg bus ... busctl list
+      List processes using resource .. fuser
+      List shared library deps ....... ldd <cmd>
+      System trace a program ......... strace <cmd>
+      Print summary of system calls .. strace -c <cmd>
+      List binary's program calls .... ltrace <cmd>
+
+      ## Control Groups
+      Print control groups ........... systemd-cgls
+      Open top for control groups .... systemd-cgtop
+      List resource usage by cgroup .. systemd-cgtop
+
+      ## Process Control
+      Disassociate job from terminal . nohup <cmd> &>/dev/null &
+      Retrieve or modify rlimits ..... prlimit --pid <pid>
+      Send a signal to process cmd ... killall <cmd>
+      Generate core dump of process .. gcore <pid>
+

@@ -1,0 +1,31 @@
+
+      ## General
+      Print distro information ....... lsb_release -a
+      Print various hardware info .... uname -a
+      Print architecture parameters .. getconf -a
+      Show other hardware info ....... dmidecode
+      List uptime and load averages .. uptime
+      Get CPU specs .................. lscpu
+      Show number of cores ........... nproc
+
+      ## Devices
+      Get device info ................ udevadm info --query=all --name=<dev>
+      Watch device changes ........... udevadm monitor <args>
+
+      ## IPC
+      Show available IPC facilities .. lsipc
+      Show IPC subsystem activity .... ipcs
+      Show processes using msg bus ... busctl list
+
+      ## Memory
+      Show memory use ................ free -h
+
+      ## I/O
+      Open top for IO ................ iotop
+      Show disk availability ......... df -h
+      Show file size ................. du -sh
+      List IO information ............ iostat
+
+      ## Sockets
+      List domain sockets in use ..... lsof -U
+

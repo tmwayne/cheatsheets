@@ -17,3 +17,6 @@
       List loaded modules ............ lsmod
       Print info about module ........ modinfo
 
+      ## Diagnostics
+      Print kernel ring buffer ....... dmesg
+      Watch kernel messages .......... dmesg --human -w
