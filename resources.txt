@@ -29,3 +29,16 @@
       ## Sockets
       List domain sockets in use ..... lsof -U
 
+      ## Keyboard
+      Examine keycode sent by key .... showkey --ascii
+      Print keycode mapping .......... dumpkeys -l
+      Print contents of X events ..... xev -event keyboard
+
+      ## Audio
+      Adjust audio settings .......... alsamixer
+      Save settings .................. alsactl store
+
+      ## Printing
+      List printers .................. lpstat -d
+      Print file ..................... lp <file>
+
