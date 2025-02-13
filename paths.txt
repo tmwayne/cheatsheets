@@ -5,9 +5,12 @@
       Man page for /proc ............. man 5 proc
       Print system paths ............. systemd-path
 
-      ## System Information
+      ## Process Information
       Process specific info .......... /proc/<pid>/status
       Set process resource limits .... /proc/<pid>/limits
+      Process's memory areas ......... /proc/<pid>/maps
+
+      ## System Information
       Kernel settings ................ /proc/sys/kernel
       File System info ............... /proc/sys/fs
       Inotify limits ................. /proc/sys/fs/inotify
@@ -16,12 +19,14 @@
       Partitions with device IDs ..... /proc/partition
       Supported filesystems .......... /proc/filesystems
       Network info ................... /proc/net
-      Swap information ............... /proc/swaps
       View current set of locks ...... /proc/locks
       CPU info ....................... /proc/cpuinfo
-      Memory info .................... /proc/meminfo
       Disk stats ..................... /proc/diskstats
       Devices ........................ /proc/devices
+      Memory info .................... /proc/meminfo
+      Memory zones ................... /proc/zoneinfo
+      Slab info ...................... /proc/slabinfo
+      Swap information ............... /proc/swaps
       
       ## Misc
       Libvirt images ................. /var/lib/libvirt/images

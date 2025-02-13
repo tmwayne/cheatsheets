@@ -7,6 +7,7 @@
       ## Monitoring & Information
       Print info about process ....... prtstat
       Print process accounting info .. lastcomm
+      List process's memory areas .... pmap <pid>
       Monitor a specific process ..... pidstat
       List the files processes use ... lsof -p <prog>
       Show processes using msg bus ... busctl list
