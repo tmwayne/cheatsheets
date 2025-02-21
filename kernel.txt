@@ -2,11 +2,16 @@
       ## Repo
       Kernel git repo ................ git://git.kernel.org/pub/scm/linux/
       ................................   kernel/git/stable/linux-stable.git
+      List build commands ............ make help
 
       ## Configuration
       Configure kernel ............... make menuconfig
       Use default configs ............ make defconfig
       Validate and update configs .... make oldconfig
+      Display all kernel params ...... sysctl -a
+      Print kernel param ............. sysctl <param>
+      Print kernel param by regex .... sysctl -a -r <re>
+      Kernel options via dracut ...... man dracut.kernel
 
       ## Installation
       Install modules ................ make modules_install
@@ -16,7 +21,13 @@
       ## Modules
       List loaded modules ............ lsmod
       Print info about module ........ modinfo
+      List module dependencies ....... depmod -n
+      Load module .................... insmod <mod>
+      Remove module .................. rmmod <mod>
+      Load module, intelligently ..... modprobe <mod> [mod-params..]
+      Remove module, intelligently ... modprobe -r <mod>
 
       ## Diagnostics
       Print kernel ring buffer ....... dmesg
       Watch kernel messages .......... dmesg --human -w
+
