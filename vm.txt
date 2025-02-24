@@ -4,6 +4,7 @@
       Clone VM ....................... virt-clone -o <orig> -n <name>
       Get OS options ................. osinfo-query os
       Build packer in debug mode ..... packer build -on-error=ask <file>
+      Convert image format ........... qemu-img convert <old> <new>
       
       ## Interaction
       List VMs ....................... virsh list --all
@@ -13,10 +14,11 @@
       Remove VM ...................... virsh undefine <vm>
       Rename VM ...................... virsh domrename <old> <new>
       Connect to running session ..... virt-viewer --attach <vm>
+      Connect using serial console ... virsh console
 
       ## Inspection
       Get IP address for VM .......... virsh domifaddr <vm>
-      Connec to VM with VNC or Spice . remote-viewer <uri>
+      Connect to VM with VNC ......... remote-viewer vnc://<uri>
       List all images ................ machinectl list
 
       ## Network
