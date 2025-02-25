@@ -1,6 +1,9 @@
 
       ## Diagnostic
+      Get ethernet NIC info .......... ethtool <if>
       View ARP cache ................. arp
+      Show IPv6 neighbors ............ ip -6 neigh show
+      View datalink errors ........... netstat -i
       Capture transferred packets .... tcpdump -i <int> -f <file>
       Read tcpdump file (ASCII) ...... tcpdump -A -# -r <file>
       Read tcpdump file (ASCII+hex) .. tcpdump -XX -# -r <file>
@@ -30,7 +33,7 @@
       Check WPA status ............... wpa_cli status
       Make encrypted network config .. wpa_passphrase <ssid> <psk>
       List available wifi networks ... nmcli device wifi list
-      Info for wireless connctionss .. iw dev <int> link
+      Info for wireless connctionss .. iw dev <if> link
       Check if wifi is blocked ....... rfkill list
       Unblock wifi interface ......... rfkill unblock wifi
 
