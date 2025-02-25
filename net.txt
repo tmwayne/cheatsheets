@@ -1,5 +1,6 @@
 
       ## Diagnostic
+      View ARP cache ................. arp
       Capture transferred packets .... tcpdump -i <int> -f <file>
       Read tcpdump file (ASCII) ...... tcpdump -A -# -r <file>
       Read tcpdump file (ASCII+hex) .. tcpdump -XX -# -r <file>
