@@ -33,4 +33,5 @@
       Pacman lock .................... /var/lib/pacman/db.lck
       Syslog messages ................ /var/log/messages
       POSIX shared memory ............ /dev/shm
+      List of words .................. /usr/share/dict/words
 

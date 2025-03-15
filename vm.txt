@@ -8,16 +8,17 @@
       
       ## Interaction
       List VMs ....................... virsh list --all
-      Edit VM ........................ virsh edit <vm>
-      Reboot VM ...................... virsh reboot <vm>
-      Shutdown VM .................... virsh shutdown <vm>
-      Remove VM ...................... virsh undefine <vm>
+      Edit VM ........................ virsh edit <dom>
+      Reboot VM ...................... virsh reboot <dom>
+      Shutdown VM .................... virsh shutdown <dom>
+      Remove VM ...................... virsh undefine <dom>
       Rename VM ...................... virsh domrename <old> <new>
-      Connect to running session ..... virt-viewer --attach <vm>
+      Connect to running session ..... virt-viewer --attach <dom>
       Connect using serial console ... virsh console
+      Get kernel from VM ............. virt-get-kernel -d <dom>
 
       ## Inspection
-      Get IP address for VM .......... virsh domifaddr <vm>
+      Get IP address for VM .......... virsh domifaddr <dom>
       Connect to VM with VNC ......... remote-viewer vnc://<uri>
       List all images ................ machinectl list
 

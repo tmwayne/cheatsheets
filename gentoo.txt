@@ -34,7 +34,7 @@
       Start service .................. rc-service <svc> start
       Check status of service ........ rc-service <svc> status
       List status of all services .... rc-status --all
-      List runlevel of init scripts .. rc-udpate show -v
+      List runlevel of init scripts .. rc-update show -v
 
       ## Firmware
       List detected/supported dev .... fwupdmgr get-devices

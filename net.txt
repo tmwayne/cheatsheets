@@ -4,36 +4,51 @@
       View ARP cache ................. arp
       Show IPv6 neighbors ............ ip -6 neigh show
       View datalink errors ........... netstat -i
+      Scan network for hosts ......... nmap -sn <network>
+      Show the IP routing table ...... route
+      Show the IP routing table ...... netstat -nr
+      Print packet path to host ...... traceroute
+      Print packet path to host ...... tracepath
       Capture transferred packets .... tcpdump -i <int> -f <file>
       Read tcpdump file (ASCII) ...... tcpdump -A -# -r <file>
       Read tcpdump file (ASCII+hex) .. tcpdump -XX -# -r <file>
-      Lookup IP for DNS name ......... nslookup <DNS name>
-      Scan network for hosts ......... nmap -sn <network>
-      Show the IP routing table ...... route
-      Print packet path to host ...... traceroute [depr]
-      Print packet path to host ...... tracepath
 
       ## Port management
       IPv4 ports ..................... lsof -Pnl +m -i4
       List ports used or listened to . lsof -i
       List ports used by program ..... lsof -i:<port>
-      Print open TCP connections ..... netstat -nt
-      Servicing listening to ports ... netstat -ntl
-      Ports used by application ...... rpcinfo -p
+      Print open TCP connections ..... netstat -npt
+      Servicing listening to ports ... netstat -nptl
       Display network socket info .... ss
       List tcp listening processes ... ss -plt
+      Ports used by application ...... rpcinfo -p
 
       ## Interface management
       View visible interfaces ........ ip addr show
+      Show IPv4 by interface ......... ip -br -4 addr
       Show NIC info .................. ifconfig 
       Show NIC info .................. ip link
       Inspect DNS resolver ........... resolvectl
 
+      ## DNS
+      Query NSS library for IP ....... getent hosts <name>
+      Do forward DNS query ........... host <ip>
+      Do verbose forward DNS query ... host -v <ip>
+      DO DNS query with given NS ..... host <ip> <ns>
+
+      ## Packet Sniffing
+      Listen on interface ............ tcpdump -i <if>
+      Listen w/o name resolution ..... tcpdump -ni <if>
+      Filter traffic by port ......... tcpdump -ni <if> tcp port <port>
+      Print packet in hex/ascii ...... tcpdump -ni <if> -X
+      Capture session in file ........ tcpdump -w <file> -ni <if>
+      Read capture file .............. tcpdump -r <file>
+
       ## Wifi
       Check WPA status ............... wpa_cli status
       Make encrypted network config .. wpa_passphrase <ssid> <psk>
-      List available wifi networks ... nmcli device wifi list
       Info for wireless connctionss .. iw dev <if> link
+      List available wifi networks ... nmcli device wifi list
       Check if wifi is blocked ....... rfkill list
       Unblock wifi interface ......... rfkill unblock wifi
 
@@ -41,12 +56,14 @@
       Create new key ................. ssh-keygen -b 2048 -t rsa
       Add key to agent ............... ssh-add <key>
       Copy public key to vm .......... ssh-copy-id user@remote
-      Create TCP connection .......... telnet <host> <port>
-      Create TCP/UDP connection ...... nc <host> <port>
+      Create TCP connection .......... nc -v <host> <port>
+      Create UDP connection .......... nc -uv <host> <port>
+      Listen on TCP port ............. nc -l [host] <port>
       Create local tunnel ............ nc -L localhost:<src> -p <dest>
       Update NFS exports ............. exportfs -arv
 
       ## Web interaction
       Save HTTP interaction to file .. curl --trace-ascii <file> <url>
       Continue wget download ......... wget -c <url>
+      Get info about a domain ........ whois <url>
 

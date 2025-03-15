@@ -28,6 +28,7 @@
 
       ## Sockets
       List domain sockets in use ..... lsof -U
+      List domain sockets ............ netstat -npxa
 
       ## Keyboard
       Examine keycode sent by key .... showkey --ascii
